@@ -38,6 +38,7 @@ module.exports = {
       { rel:"icon", type:"image/png", sizes:"96x96", href:"/favicon-96x96.png" },
       { rel:"icon", type:"image/png", sizes:"16x16", href:"/favicon-16x16.png" },
       { rel:"manifest", href:"/manifest.json" },
+      { rel:"stylesheet", href:"https://fonts.googleapis.com/css?family=Open+Sans:400,700"},
       { rel:"stylesheet", href:"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", integrity:"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm", crossorigin:"anonymous" },
       { rel:"stylesheet", href:"https://unpkg.com/shards-ui@2.0.3/dist/css/shards.min.css"}
     ]

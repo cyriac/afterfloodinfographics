@@ -2,7 +2,7 @@
   <div>
     <b-navbar toggleable="md" type="dark" variant="primary">
       <b-container>
-        <b-navbar-brand to="/"><app-logo /> After Floods Infographics</b-navbar-brand>
+        <b-navbar-brand to="/"><app-logo /></b-navbar-brand>
           <b-navbar-nav class="ml-auto">
             <b-nav-item-dropdown text="Language" right>
               <b-dropdown-item :to="'/'+lang" v-for="lang in $store.state.languages" :key="lang">
@@ -32,6 +32,15 @@ export default {
 </script>
 
 <style lang="scss">
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.btn,
+.nav,
+.navbar-brand,
+.card-link,
+.pagination {
+  font-family: 'Open Sans', "Helvetica Neue", Arial, sans-serif;
+}
 .dropdown-item {
   text-transform: capitalize;
 }
