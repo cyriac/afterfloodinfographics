@@ -35,4 +35,14 @@ export default {
 .dropdown-item {
   text-transform: capitalize;
 }
+.navbar {
+  margin-bottom: 20px;
+}
+.card {
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  &:hover {
+    transform: scale(1.01);
+  }
+}
 </style>

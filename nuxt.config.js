@@ -50,6 +50,9 @@ module.exports = {
     '@nuxtjs/axios',
     ['bootstrap-vue/nuxt', { css: false }],
   ],
+  plugins: [
+    '~/plugins/filters.js',
+  ],
   /*
   ** Build configuration
   */
