@@ -44,6 +44,7 @@ module.exports = {
   loading: { color: '#3B8070' },
   modules: [
     '@nuxtjs/axios',
+    ['bootstrap-vue/nuxt', { css: false }],
   ],
   /*
   ** Build configuration
