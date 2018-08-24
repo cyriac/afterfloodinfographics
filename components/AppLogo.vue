@@ -1,3 +1,3 @@
 <template>
-  <div>logo</div>
+  <b-img fluid src="/apple-icon-180x180.png" />
 </template>
