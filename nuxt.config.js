@@ -1,4 +1,8 @@
 module.exports = {
+  mode: 'spa',
+  router: {
+    mode: 'hash'
+  },
   /*
   ** Headers of the page
   */
