@@ -4,7 +4,7 @@
       <b-container>
         <b-navbar-brand to="/"><app-logo /></b-navbar-brand>
           <b-navbar-nav class="ml-auto">
-            <b-nav-item-dropdown right>
+            <b-nav-item-dropdown right v-if="$store.state.languages">
               <template slot="button-content">
                 <span v-if="$route.params.language">{{ $route.params.language }}</span>
                 <span v-else>Select Language</span>
