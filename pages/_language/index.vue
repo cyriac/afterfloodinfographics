@@ -31,6 +31,13 @@ export default {
       search: ""
     }
   },
+  head () {
+    let lang = this.$route.params.language
+    lang = lang.replace(/\w\S*/g, (txt) => { return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();})
+    return {
+      'title': lang
+    }
+  },
   methods:{
     getimgurl (drive_url) {
       return this.$options.filters.getGoogleImgUrl(this.$options.filters.getGoogleID(drive_url))

@@ -1,19 +1,19 @@
 <template>
   <div>
-    <b-navbar toggleable="md" type="dark" variant="primary">
+    <b-navbar toggleable="md" type="dark" variant="dark">
       <b-container>
         <b-navbar-brand to="/"><app-logo /></b-navbar-brand>
-          <b-navbar-nav class="ml-auto">
-            <b-nav-item-dropdown right v-if="$store.state.languages">
-              <template slot="button-content">
-                <span v-if="$route.params.language">{{ $route.params.language }}</span>
-                <span v-else>Select Language</span>
-              </template>
-              <b-dropdown-item :to="'/'+lang" v-for="lang in $store.state.languages" :key="lang">
-                {{ lang }}
-              </b-dropdown-item>
-            </b-nav-item-dropdown>
-          </b-navbar-nav>
+        <b-navbar-nav class="ml-auto">
+          <b-nav-item-dropdown right v-if="$store.state.languages">
+            <template slot="button-content">
+              <span v-if="$route.params.language">{{ $route.params.language }}</span>
+              <span v-else>Select Language</span>
+            </template>
+            <b-dropdown-item :to="'/'+lang" v-for="lang in $store.state.languages" :key="lang">
+              {{ lang }}
+            </b-dropdown-item>
+          </b-nav-item-dropdown>
+        </b-navbar-nav>
       </b-container>
     </b-navbar>
     <b-container>
@@ -21,8 +21,9 @@
     </b-container>
     <footer class="text-center text-muted">
       <hr />
-      <a v-b-tooltip.hover title="Source code" class="text-muted" href="https://github.com/cyriac/afterfloodinfographics">Github</a> •
-      <a v-b-tooltip.hover title="Images created by KeralaFloods Infographics" class="text-muted" href="https://www.facebook.com/KeralaFloodsInfo/">Facebook</a>
+      <a v-b-tooltip.hover title="What to do after a flood" class="text-muted" href="https://www.afterflood.in" target="_blank">#AfterFlood</a> •
+      <a v-b-tooltip.hover title="Source code" class="text-muted" href="https://github.com/cyriac/afterfloodinfographics" target="_blank">Github</a> •
+      <a v-b-tooltip.hover title="Images created by KeralaFloods Infographics" class="text-muted" href="https://www.facebook.com/KeralaFloodsInfo/" target="_blank">Facebook</a>
     </footer>
   </div>
 </template>
@@ -33,6 +34,11 @@ import AppLogo from '~/components/AppLogo.vue'
 export default {
   components: {
     AppLogo
+  },
+  head () {
+    return {
+      titleTemplate: `%s | After Flood Infographics`
+    }
   },
   mounted () {
     this.$store.dispatch('GET_INDEX')
@@ -49,6 +55,12 @@ h1, h2, h3, h4, h5, h6,
 .card-link,
 .pagination, a {
   font-family: 'Open Sans', "Helvetica Neue", Arial, sans-serif;
+  color: #212529;
+}
+a {
+  &:hover, &:focus, &:active {
+    color: #212529;
+  }
 }
 p {
   line-height: 1.6;
@@ -86,7 +98,7 @@ footer {
   border-bottom-right-radius: 4px;
   border-top: 1px solid #ddd;
 }
-.card-body{
+.card-body {
   padding: 1em;
 }
 .card-title {

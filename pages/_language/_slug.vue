@@ -12,11 +12,10 @@
   	    </b-col>
         <b-col cols="12" md="4">
     			<h2 class="section-header">{{ document['Project Description'] }}</h2>
-          <a class="card btn-card mb-40"
-             :href="document[$route.params.language + ':pdf']"
+          <a :href="document[$route.params.language + ':pdf']"
              target="_blank"
              v-if="document[$route.params.language + ':pdf'] !== undefined">
-            Dowload PDF
+            <span class="card btn-card mb-40">Dowload PDF</span>
           </a>
     			<p class="section-desc">Share on social media</p>
           <b-row class="mb-40">
@@ -46,6 +45,11 @@
 import getGoogleImgUrl from '~/plugins/filters'
 import getGoogleID from '~/plugins/filters'
 export default {
+  head () {
+    return {
+      title: this.document['Project Description'] || ""
+    }
+  },
   methods:{
     getimgurl (drive_url) {
       return this.$options.filters.getGoogleImgUrl(this.$options.filters.getGoogleID(drive_url))
@@ -134,7 +138,7 @@ export default {
 	margin-bottom: 40px;
 }
 .btn-card{
-	color: #007bff;
+	color: #212529;
 	font-size: 0.9em;
 	padding: 10px 15px;
 	display: inline-block;
