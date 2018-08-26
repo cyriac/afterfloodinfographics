@@ -10,16 +10,22 @@
                            placeholder="https://res.cloudinary.com/dck5rpuat/image/upload/v1535287279/placeholder.png"/>
           <b-img src="https://res.cloudinary.com/dck5rpuat/image/upload/v1535287279/placeholder.png" class="full-width-image" v-else />
   	    </b-col>
-        <b-col>
+        <b-col cols="12" md="4">
     			<h2 class="section-header">{{ document['Project Description'] }}</h2>
+          <a class="card btn-card mb-40"
+             :href="document[$route.params.language + ':pdf']"
+             target="_blank"
+             v-if="document[$route.params.language + ':pdf'] !== undefined">
+            Dowload PDF
+          </a>
     			<p class="section-desc">Share on social media</p>
           <b-row class="mb-40">
-    				<div class="col">
+    				<b-col>
     	  				<a class="btn sm-btn sm-facebook" :href="'https://www.facebook.com/sharer.php?caption=After Flood Infographics on' + document['Project Description'] + '&description=After Flood Infographics on' + document['Project Description'] + '&u=https://afterfloodinfographics.netlify.com/#/' + $route.fullPath" target="_blank">Share</a>
-    				</div>
-    	  			<div class="col">
+    				</b-col>
+            <b-col>
     	  				<a class="btn sm-btn sm-twitter" :href="'https://twitter.com/share?text=After Flood Infographics on' + document['Project Description'] + '&hashtags=AfterFlood, Infographics, KeralaFloods' + '&url=https://afterfloodinfographics.netlify.com/#/' + $route.fullPath" target="_blank">Tweet</a>
-    				</div>
+    				</b-col>
           </b-row>
   	  		<b-row v-if="other_languages.length > 0">
             <b-col>
