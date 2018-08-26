@@ -2,7 +2,7 @@
   <div>
 	  <div class="row image-outer-container" v-if="document">
 	    <div class="col-8">
-	    	<img class="full-width-image" :src="getimgurl(document[$route.params.language + ':png'])" v-if="document[$route.params.language + ':png'] !== null" />
+	    	<progressive-img class="full-width-image" :src="getimgurl(document[$route.params.language + ':png'])" v-if="document[$route.params.language + ':png'] !== null" placeholder="https://res.cloudinary.com/dck5rpuat/image/upload/v1535287279/placeholder.png" />
 	    </div>
 	    <div class="col">
 			<h2 class="section-header">{{ document['Project Description'] }}</h2>
@@ -52,6 +52,10 @@
 <script>
 import getGoogleImgUrl from '~/plugins/filters'
 import getGoogleID from '~/plugins/filters'
+import Vue from 'vue'
+import VueProgressiveImage from 'vue-progressive-image'
+
+Vue.use(VueProgressiveImage)
 
 export default {
   methods:{
