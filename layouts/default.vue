@@ -88,6 +88,7 @@ footer {
   margin: 20px 0;
 }
 .breadcrumb {
+  background: #ffffff;
   display: inline-flex;
 }
 .card {
