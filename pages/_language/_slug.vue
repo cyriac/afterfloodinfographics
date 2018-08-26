@@ -12,33 +12,33 @@
 	  				<a class="btn sm-btn sm-facebook" :href="'https://www.facebook.com/sharer.php?caption=After Flood Infographics on' + document['Project Description'] + '&description=After Flood Infographics on' + document['Project Description'] + '&u=https://localhost:3000/#/' + $route.fullPath" target="_blank">Share</a>
 				</div>
 	  			<div class="col">
-	  				<a class="btn sm-btn sm-twitter" :href="'https://www.facebook.com/sharer.php?caption=After Flood Infographics on' + document['Project Description'] + '&description=After Flood Infographics on' + document['Project Description'] + '&u=https://localhost:3000/#/' + $route.fullPath" target="_blank">Tweet</a>
+	  				<a class="btn sm-btn sm-twitter" :href="'https://twitter.com/share?text=After Flood Infographics on' + document['Project Description'] + '&hashtags=AfterFlood, Infographics, KeralaFloods' + '&url=https://localhost:3000/#/' + $route.fullPath" target="_blank">Tweet</a>
 				</div>
 	  		</div>
 	  		<p class="section-desc">This infographic is available in the following languages as well:</p>
 	  		<div class="row">
 	  			<div class="col">
-	  				<nuxt-link :to="'/assamese/' + document['slug']" v-if="document['assamese:png']">
+	  				<nuxt-link :to="'/assamese/' + document['slug']" v-if="document['assamese:png'] && $route.params.language!=='assamese'">
 	  					<a class="card btn-card">Assamese</a>
 	  				</nuxt-link>
 
-	  				<nuxt-link :to="'/english/' + document['slug']" v-if="document['english:png']">
+	  				<nuxt-link :to="'/english/' + document['slug']" v-if="document['english:png'] && $route.params.language!=='english'">
 	  					<a class="card btn-card">English</a>
 	  				</nuxt-link>
 
-	  				<nuxt-link :to="'/hindi/' + document['slug']" v-if="document['hindi:png']">
+	  				<nuxt-link :to="'/hindi/' + document['slug']" v-if="document['hindi:png'] && $route.params.language!=='hindi'">
 	  					<a class="card btn-card">Hindi</a>
 	  				</nuxt-link>
 
-	  				<nuxt-link :to="'/kannada/' + document['slug']" v-if="document['kannada:png']">
+	  				<nuxt-link :to="'/kannada/' + document['slug']" v-if="document['kannada:png'] && $route.params.language!=='kannada'">
 	  					<a class="card btn-card">Kannada</a>
 	  				</nuxt-link>
 
-	  				<nuxt-link :to="'/malayalam/' + document['slug']" v-if="document['malayalam:png']">
+	  				<nuxt-link :to="'/malayalam/' + document['slug']" v-if="document['malayalam:png'] && $route.params.language!=='malayalam'">
 	  					<a class="card btn-card">Malayalam</a>
 	  				</nuxt-link>
 
-	  				<nuxt-link :to="'/tamil/' + document['slug']" v-if="document['tamil:png']">
+	  				<nuxt-link :to="'/tamil/' + document['slug']" v-if="document['tamil:png'] && $route.params.language!=='tamil'">
 	  					<a class="card btn-card">Tamil</a>
 	  				</nuxt-link>
 
