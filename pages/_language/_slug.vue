@@ -91,15 +91,11 @@ export default {
 </script>
 
 <style lang="scss">
-
 .full-width-image{
 	width: 100%;
 	border-radius: 4px;
 	border: 1px solid #ddd;
 	margin-bottom: 50px;
-}
-.image-outer-container{
-	margin-top: 40px;
 }
 .section-header{
 	font-size: 2em;

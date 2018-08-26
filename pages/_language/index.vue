@@ -2,7 +2,15 @@
   <transition name="fade">
     <b-row>
       <b-col cols="12">
-        <b-breadcrumb :items="breadcrumb_items"/>
+        <b-row class="justify-content-between">
+          <b-col cols="12" md="6">
+            <b-breadcrumb :items="breadcrumb_items"/>
+          </b-col>
+          <b-col cols="12" md="3">
+            <input class="w-100 form-control" v-model="search" placeholder="Search"/>
+            {{ search }}
+          </b-col>
+        </b-row>
       </b-col>
       <b-col cols="12" class="card-columns">
         <nuxt-link :to="'/' + $route.params.language + '/' + doc['slug']" v-if="documents.length > 0" v-for="doc in documents" :key="doc.slug">
@@ -19,6 +27,11 @@ import getGoogleImgUrl from '~/plugins/filters'
 import getGoogleID from '~/plugins/filters'
 
 export default {
+  data () {
+    return {
+      search: ""
+    }
+  },
   methods:{
     getimgurl (drive_url) {
       return this.$options.filters.getGoogleImgUrl(this.$options.filters.getGoogleID(drive_url))
@@ -39,6 +52,13 @@ export default {
       if (this.$store.state.index !== null) {
         documents = this.$store.state.index.filter((elem) => {
           return (elem[this.$route.params.language+":png"] !== null || elem[this.$route.params.language+":pdf"] !== null)
+        })
+      }
+      if (this.search.length > 0) {
+        let search_val = this.search.toLowerCase().replace(/\s+/g, '').trim()
+        documents = documents.filter((elem) => {
+          let search_slug = elem['slug'].replace(/\-/g, '')
+          return search_slug.includes(search_val)
         })
       }
       return documents

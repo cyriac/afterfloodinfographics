@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6,
 .pagination, a {
   font-family: 'Open Sans', "Helvetica Neue", Arial, sans-serif;
 }
-p{
+p {
   line-height: 1.6;
 }
 .dropdown-toggle, .dropdown-item, .breadcrumb-item {
@@ -53,6 +53,9 @@ p{
 }
 .navbar {
   margin-bottom: 20px;
+}
+.breadcrumb {
+  display: inline-flex;
 }
 .card {
   margin-bottom: 20px;
