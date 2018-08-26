@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <transition name="fade">
+  <transition name="fade">
+    <div>
+      <b-breadcrumb :items="breadcrumb_items"/>
       <b-row class="image-outer-container" v-if="document">
   	    <b-col cols="12" md="8">
   	    	<progressive-img class="full-width-image"
@@ -30,8 +31,8 @@
   	  		 </b-row>
   	    </b-col>
   	  </b-row>
-  	</transition>
-  </div>
+    </div>
+	</transition>
 </template>
 
 
@@ -45,6 +46,22 @@ export default {
     }
   },
   computed: {
+    breadcrumb_items () {
+      let items = [{
+          text: 'Home',
+          to: '/'
+        }, {
+          text: this.$route.params.language,
+          to: '/' + this.$route.params.language
+      }]
+      if (this.document !== null) {
+        items.push({
+          text: this.document['Project Description'],
+          active: true
+        })
+      }
+      return items;
+    },
     document () {
       let documents = []
       if (this.$store.state.index !== null) {

@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6,
 p{
   line-height: 1.6;
 }
-.dropdown-toggle, .dropdown-item {
+.dropdown-toggle, .dropdown-item, .breadcrumb-item {
   text-transform: capitalize;
 }
 .navbar {

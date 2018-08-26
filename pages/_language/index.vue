@@ -1,13 +1,16 @@
 <template>
   <transition name="fade">
-  <b-row>
-    <b-col cols="12" class="card-columns">
-      <nuxt-link :to="'/' + $route.params.language + '/' + doc['slug']" v-if="documents.length > 0" v-for="doc in documents" :key="doc.slug">
-        <b-card :img-src="getimgurl(doc[$route.params.language + ':png'])" img-bottom v-if="doc[$route.params.language + ':png'] !== null" class="card-no-title"></b-card>
-        <b-card :title="doc['Project Description']" v-else></b-card>
-      </nuxt-link>
-    </b-col>
-  </b-row>
+    <b-row>
+      <b-col cols="12">
+        <b-breadcrumb :items="breadcrumb_items"/>
+      </b-col>
+      <b-col cols="12" class="card-columns">
+        <nuxt-link :to="'/' + $route.params.language + '/' + doc['slug']" v-if="documents.length > 0" v-for="doc in documents" :key="doc.slug">
+          <b-card :img-src="getimgurl(doc[$route.params.language + ':png'])" img-bottom v-if="doc[$route.params.language + ':png'] !== null" class="card-no-title"></b-card>
+          <b-card :title="doc['Project Description']" v-else></b-card>
+        </nuxt-link>
+      </b-col>
+    </b-row>
   </transition>
 </template>
 
@@ -22,6 +25,15 @@ export default {
     }
   },
   computed: {
+    breadcrumb_items () {
+      return [{
+          text: 'Home',
+          to: '/'
+        }, {
+          text: this.$route.params.language,
+          active: true
+        }]
+    },
     documents () {
       let documents = []
       if (this.$store.state.index !== null) {
