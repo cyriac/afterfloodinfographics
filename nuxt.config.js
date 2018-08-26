@@ -59,6 +59,19 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    extractCSS: true,
+    babel: {
+      presets: [
+        'es2015',
+        'stage-0'
+      ],
+      plugins: [
+        ["transform-runtime", {
+          "polyfill": true,
+          "regenerator": true
+        }]
+      ]
+    },
     /*
     ** Run ESLint on save
     */
