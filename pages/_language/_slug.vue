@@ -49,7 +49,6 @@
   </div>
 </template>
 
-
 <script>
 import getGoogleImgUrl from '~/plugins/filters'
 import getGoogleID from '~/plugins/filters'
@@ -61,6 +60,7 @@ export default {
     }
   },
   computed: {
+
 
 
   	document(){
