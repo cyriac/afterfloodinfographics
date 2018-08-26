@@ -4,7 +4,11 @@
       <b-container>
         <b-navbar-brand to="/"><app-logo /></b-navbar-brand>
           <b-navbar-nav class="ml-auto">
-            <b-nav-item-dropdown text="Language" right>
+            <b-nav-item-dropdown right v-if="$store.state.languages">
+              <template slot="button-content">
+                <span v-if="$route.params.language">{{ $route.params.language }}</span>
+                <span v-else>Select Language</span>
+              </template>
               <b-dropdown-item :to="'/'+lang" v-for="lang in $store.state.languages" :key="lang">
                 {{ lang }}
               </b-dropdown-item>
@@ -41,7 +45,7 @@ h1, h2, h3, h4, h5, h6,
 .pagination {
   font-family: 'Open Sans', "Helvetica Neue", Arial, sans-serif;
 }
-.dropdown-item {
+.dropdown-toggle, .dropdown-item {
   text-transform: capitalize;
 }
 .navbar {

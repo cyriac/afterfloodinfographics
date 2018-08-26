@@ -34,7 +34,6 @@ export const actions = {
                 let lang = cell.text.toLowerCase()
                 headers.push(lang + ":png")
                 headers.push(lang + ":pdf")
-                languages.push(lang)
               }
             }
           })
@@ -68,6 +67,19 @@ export const actions = {
           break;
       }
     })
+
+    objects.forEach((obj) => {
+      Object.keys(obj).forEach((elem) => {
+        if (!elem.startsWith("Project") && elem !== 'slug') {
+          let lang = elem.split(":")[0]
+          let value = obj[elem]
+          if (value !== null && !languages.includes(lang)) {
+            languages.push(lang)
+          }
+        }
+      })
+    })
+
     commit('SET_INDEX', {'index': objects, 'languages': languages})
   }
 }
