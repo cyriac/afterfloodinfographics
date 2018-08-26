@@ -53,6 +53,7 @@ module.exports = {
   ],
   plugins: [
     '~/plugins/filters.js',
+    '~/plugins/vue-progressive-image.js',
   ],
   /*
   ** Build configuration
