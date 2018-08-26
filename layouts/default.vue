@@ -21,7 +21,7 @@
     </b-container>
     <footer class="text-center text-muted">
       <hr />
-      <a v-b-tooltip.hover title="What to do after a flood" class="text-muted" href="https://www.afterflood.in" target="_blank">#AfterFlood</a> •
+      <a v-b-tooltip.hover title="A crowd sourced data hub for all after flood precautions" class="text-muted" href="https://www.afterflood.in" target="_blank">#AfterFlood</a> •
       <a v-b-tooltip.hover title="Source code" class="text-muted" href="https://github.com/cyriac/afterfloodinfographics" target="_blank">Github</a> •
       <a v-b-tooltip.hover title="Images created by KeralaFloods Infographics" class="text-muted" href="https://www.facebook.com/KeralaFloodsInfo/" target="_blank">Facebook</a>
     </footer>
