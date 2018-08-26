@@ -80,6 +80,13 @@ export default {
   }
   .card-img-bottom {
     border-top: 0;
+    filter: grayscale(100%);
+    margin-bottom: -30px;
+  }
+  &:hover, &:focus, &:active {
+    .card-img-bottom {
+      filter: grayscale(0);
+    }
   }
 }
 </style>
