@@ -49,7 +49,12 @@ h1, h2, h3, h4, h5, h6,
 }
 .card {
   margin-bottom: 20px;
+  border-radius: 4px;
+  font-size: 1.0em !important;
   text-transform: capitalize;
+  border: 1px solid #ddd;
+  box-shadow: 0px 3px 7px rgba(0,0,0,0.05) !important;
+  transition: all 0.1s ease-in;
   &:hover {
     transform: scale(1.01);
   }
