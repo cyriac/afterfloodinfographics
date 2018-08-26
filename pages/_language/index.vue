@@ -8,7 +8,6 @@
           </b-col>
           <b-col cols="12" md="3">
             <input class="w-100 form-control" v-model="search" placeholder="Search"/>
-            {{ search }}
           </b-col>
         </b-row>
       </b-col>
