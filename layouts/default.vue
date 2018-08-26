@@ -37,13 +37,16 @@ export default {
 
 <style lang="scss">
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6,
+.h1, .h2, .h3, .h4, .h5, .h6, p,
 .btn,
 .nav,
 .navbar-brand,
 .card-link,
-.pagination {
+.pagination, a {
   font-family: 'Open Sans', "Helvetica Neue", Arial, sans-serif;
+}
+p{
+  line-height: 1.6;
 }
 .dropdown-toggle, .dropdown-item {
   text-transform: capitalize;
@@ -60,7 +63,19 @@ h1, h2, h3, h4, h5, h6,
   box-shadow: 0px 3px 7px rgba(0,0,0,0.05) !important;
   transition: all 0.1s ease-in;
   &:hover {
-    transform: scale(1.01);
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1) !important;
   }
+}
+.card-img-bottom {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top: 1px solid #ddd;
+}
+.card-body{
+  padding: 1em;
+}
+.card-title {
+  font-size: 1.2em;
+  margin:0;
 }
 </style>
