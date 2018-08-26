@@ -2,7 +2,7 @@
   <div>
     <transition name="fade">
       <b-row class="image-outer-container" v-if="document">
-  	    <b-col cols="12" sm="8">
+  	    <b-col cols="12" md="8">
   	    	<progressive-img class="full-width-image"
                            :src="getimgurl(document[$route.params.language + ':png'])"
                            v-if="document[$route.params.language + ':png'] !== undefined"
