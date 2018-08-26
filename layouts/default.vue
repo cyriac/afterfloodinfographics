@@ -19,6 +19,11 @@
     <b-container>
       <nuxt/>
     </b-container>
+    <footer class="text-center text-muted">
+      <hr />
+      <a v-b-tooltip.hover title="Source code" class="text-muted" href="https://github.com/cyriac/afterfloodinfographics">Github</a> •
+      <a v-b-tooltip.hover title="Images created by KeralaFloods Infographics" class="text-muted" href="https://www.facebook.com/KeralaFloodsInfo/">Facebook</a>
+    </footer>
   </div>
 </template>
 
@@ -53,6 +58,12 @@ p {
 }
 .navbar {
   margin-bottom: 20px;
+  & + .container {
+    min-height: 70vh;
+  }
+}
+footer {
+  margin: 20px 0;
 }
 .breadcrumb {
   display: inline-flex;
