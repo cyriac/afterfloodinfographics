@@ -36,8 +36,15 @@ export default {
     AppLogo
   },
   head () {
+    let ogmeta = []
+    if (this.$route.params.slug === undefined){
+      ogmeta = [{ name: "image", content:"https://infographics.afterflood.in/ogheader.png" },
+                { itemprop: "image", content:"https://infographics.afterflood.in/ogheader.png" },
+                { name: "og:image", content:"https://infographics.afterflood.in/ogheader.png" }]
+    }
     return {
-      titleTemplate: `%s | After Flood Infographics`
+      titleTemplate: `%s | After Flood Infographics`,
+      meta: ogmeta
     }
   },
   mounted () {

@@ -47,7 +47,12 @@ import getGoogleID from '~/plugins/filters'
 export default {
   head () {
     return {
-      title: this.document['Project Description'] || ""
+      title: this.document['Project Description'] || "",
+      meta: [
+        { name: "image", content: this.document[this.$route.params.language+":png"] },
+        { itemprop: "image", content: this.document[this.$route.params.language+":png"] },
+        { name: "og:image", content: this.document[this.$route.params.language+":png"] }
+      ]
     }
   },
   methods:{
@@ -88,7 +93,6 @@ export default {
         if (key.endsWith(":png")){
           let value = this.document[key]
           let lang = key.split(":")[0]
-          console.log(value)
           if (value !== null && lang !== this.$route.params.language) {
             other_languages.push(lang)
           }
