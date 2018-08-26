@@ -62,6 +62,7 @@ p{
   border: 1px solid #ddd;
   box-shadow: 0px 3px 7px rgba(0,0,0,0.05) !important;
   transition: all 0.1s ease-in;
+  overflow: hidden;
   &:hover {
     box-shadow: 0px 5px 15px rgba(0,0,0,0.1) !important;
   }

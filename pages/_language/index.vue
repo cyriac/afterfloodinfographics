@@ -3,7 +3,7 @@
   <b-row>
     <b-col cols="12" class="card-columns">
       <nuxt-link :to="'/' + $route.params.language + '/' + doc['slug']" v-if="documents.length > 0" v-for="doc in documents" :key="doc.slug">
-        <b-card :title="doc['Project Description']" :img-src="getimgurl(doc[$route.params.language + ':png'])" img-bottom v-if="doc[$route.params.language + ':png'] !== null"></b-card>
+        <b-card :img-src="getimgurl(doc[$route.params.language + ':png'])" img-bottom v-if="doc[$route.params.language + ':png'] !== null" class="card-no-title"></b-card>
         <b-card :title="doc['Project Description']" v-else></b-card>
       </nuxt-link>
     </b-col>
@@ -34,3 +34,14 @@ export default {
   }
 }
 </script>
+
+<style scoped lang="scss">
+.card-no-title {
+  .card-body {
+    display: none;
+  }
+  .card-img-bottom {
+    border-top: 0;
+  }
+}
+</style>
