@@ -21,14 +21,14 @@
     	  				<a class="btn sm-btn sm-twitter" :href="'https://twitter.com/share?text=After Flood Infographics on' + document['Project Description'] + '&hashtags=AfterFlood, Infographics, KeralaFloods' + '&url=https://afterfloodinfographics.netlify.com/#/' + $route.fullPath" target="_blank">Tweet</a>
     				</div>
           </b-row>
-    	  		<p class="section-desc">This infographic is available in the following languages as well:</p>
-    	  		<b-row>
-    	  			<b-col>
-                <nuxt-link :to="'/' + lang + '/' + document['slug']" v-for="lang in other_languages" :key="lang">
-                  <span class="card btn-card">{{ lang }}</span>
-                </nuxt-link>
-              </b-col>
-  	  		 </b-row>
+  	  		<b-row v-if="other_languages.length > 0">
+            <b-col>
+              <p class="section-desc">This infographic is available in the following languages as well:</p>
+              <nuxt-link :to="'/' + lang + '/' + document['slug']" v-for="lang in other_languages" :key="lang">
+                <span class="card btn-card">{{ lang }}</span>
+              </nuxt-link>
+            </b-col>
+	  		  </b-row>
   	    </b-col>
   	  </b-row>
     </div>
