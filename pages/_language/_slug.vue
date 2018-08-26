@@ -2,7 +2,7 @@
   <b-row>
     <b-col cols="12">
       <b-card v-if="document" :title="document['Project Description']">
-        <b-img :src="getimgurl(document[$route.params.language + ':png'])" v-if="document[$route.params.language + ':png']"/>
+        <b-img fluid :src="getimgurl(document[$route.params.language + ':png'])" v-if="document[$route.params.language + ':png']"/>
         {{ document[$route.params.language + ':png'] }} ==== {{ document[$route.params.language + ':pdf'] }}
       </b-card>
       <nuxt-link :to="'/' + $route.params.language + '/' + doc['slug']" v-if="documents.length > 0" v-for="doc in documents" :key="doc.slug">
