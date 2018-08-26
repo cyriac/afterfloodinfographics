@@ -1,5 +1,6 @@
 <template>
   <div>
+  <transition name="fade">
 	  <div class="row image-outer-container" v-if="document">
 	    <div class="col-8">
 	    	<progressive-img class="full-width-image" :src="getimgurl(document[$route.params.language + ':png'])" v-if="document[$route.params.language + ':png'] !== null" placeholder="https://res.cloudinary.com/dck5rpuat/image/upload/v1535287279/placeholder.png" />
@@ -9,10 +10,10 @@
 			<p class="section-desc">Share on social media</p>
 			<div class="row mb-40">
 				<div class="col">
-	  				<a class="btn sm-btn sm-facebook" :href="'https://www.facebook.com/sharer.php?caption=After Flood Infographics on' + document['Project Description'] + '&description=After Flood Infographics on' + document['Project Description'] + '&u=https://localhost:3000/#/' + $route.fullPath" target="_blank">Share</a>
+	  				<a class="btn sm-btn sm-facebook" :href="'https://www.facebook.com/sharer.php?caption=After Flood Infographics on' + document['Project Description'] + '&description=After Flood Infographics on' + document['Project Description'] + '&u=https://afterfloodinfographics.netlify.com/#/' + $route.fullPath" target="_blank">Share</a>
 				</div>
 	  			<div class="col">
-	  				<a class="btn sm-btn sm-twitter" :href="'https://twitter.com/share?text=After Flood Infographics on' + document['Project Description'] + '&hashtags=AfterFlood, Infographics, KeralaFloods' + '&url=https://localhost:3000/#/' + $route.fullPath" target="_blank">Tweet</a>
+	  				<a class="btn sm-btn sm-twitter" :href="'https://twitter.com/share?text=After Flood Infographics on' + document['Project Description'] + '&hashtags=AfterFlood, Infographics, KeralaFloods' + '&url=https://afterfloodinfographics.netlify.com/#/' + $route.fullPath" target="_blank">Tweet</a>
 				</div>
 	  		</div>
 	  		<p class="section-desc">This infographic is available in the following languages as well:</p>
@@ -46,6 +47,7 @@
 	  		</div>
 	    </div>
 	  </div>
+	</transition>
   </div>
 </template>
 

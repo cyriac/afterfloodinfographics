@@ -1,4 +1,5 @@
 <template>
+  <transition name="fade">
   <b-row>
     <b-col cols="12" class="card-columns">
       <nuxt-link :to="'/' + $route.params.language + '/' + doc['slug']" v-if="documents.length > 0" v-for="doc in documents" :key="doc.slug">
@@ -7,6 +8,7 @@
       </nuxt-link>
     </b-col>
   </b-row>
+  </transition>
 </template>
 
 <script>
