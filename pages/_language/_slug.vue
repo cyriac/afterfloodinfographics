@@ -20,10 +20,10 @@
     			<p class="section-desc">Share on social media</p>
           <b-row class="mb-40">
     				<b-col>
-    	  				<a class="btn sm-btn sm-facebook" :href="'https://www.facebook.com/sharer.php?caption=After Flood Infographics on' + document['Project Description'] + '&description=After Flood Infographics on' + document['Project Description'] + '&u=https://afterfloodinfographics.netlify.com/#/' + $route.fullPath" target="_blank">Share</a>
+    	  				<a class="btn sm-btn sm-facebook" :href="'https://www.facebook.com/sharer.php?caption=After Flood Infographics on' + document['Project Description'] + '&description=After Flood Infographics on' + document['Project Description'] + '&u=https://infographics.afterflood.in/#/' + $route.fullPath" target="_blank">Share</a>
     				</b-col>
             <b-col>
-    	  				<a class="btn sm-btn sm-twitter" :href="'https://twitter.com/share?text=After Flood Infographics on' + document['Project Description'] + '&hashtags=AfterFlood, Infographics, KeralaFloods' + '&url=https://afterfloodinfographics.netlify.com/#/' + $route.fullPath" target="_blank">Tweet</a>
+    	  				<a class="btn sm-btn sm-twitter" :href="'https://twitter.com/share?text=After Flood Infographics on' + document['Project Description'] + '&hashtags=AfterFlood, Infographics, KeralaFloods' + '&url=https://infographics.afterflood.in/#/' + $route.fullPath" target="_blank">Tweet</a>
     				</b-col>
           </b-row>
   	  		<b-row v-if="other_languages.length > 0">
