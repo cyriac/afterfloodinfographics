@@ -46,6 +46,14 @@ export default {
       titleTemplate: `%s | After Flood Infographics`,
       meta: ogmeta
     }
+  },
+  mounted () {
+    // Redirect old /#/ urls to new urls
+    if (this.$route.fullPath.startsWith("/#")) {
+      try {
+        this.$router.push(this.$route.fullPath.split("/#")[1])
+      } catch (err) {}
+    }
   }
 }
 </script>
