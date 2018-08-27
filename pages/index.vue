@@ -36,7 +36,8 @@ export default{
 		}
 		.card-title{
 			text-align: left;
-			margin-top:45px;
+			margin-top:40px;
+			padding-left: 10px;
 		}
 	}	
 }
