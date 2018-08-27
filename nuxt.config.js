@@ -61,7 +61,6 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    extractCSS: true,
     babel: {
       presets: [
         'es2015',
@@ -86,7 +85,14 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+    },
+    optimization: {
+      splitChunks: {
+        name: true
+      }
+    },
+    extractCSS: { allChunks: true },
+    maxChunkSize: 300000
   },
   generate: {
     routes: async function () {
