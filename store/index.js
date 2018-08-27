@@ -58,6 +58,7 @@ export const actions = {
           });
           let slug = null
           if (obj["Project Description"] !== null) {
+            obj["Project Description"] = obj["Project Description"].trim()
             slug = obj["Project Description"].toLowerCase().replace(/\s+/g, '-').replace(/[^\w\-]+/g, '').replace(/\-\-+/g, '-').trim()
           }
           if (slug !== null){
