@@ -136,7 +136,7 @@ export default {
 	color: #fff;
 	font-weight: 600;
 	text-decoration: none;
-	&:hover{
+	&:hover, &:visited, &:focus{
 		color: #fff;
 		text-decoration: none;
 	}
