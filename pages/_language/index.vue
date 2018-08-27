@@ -23,10 +23,10 @@
                 </div>
                 <div class="col align-right">
                   <a class="sm-share-small" :href="'https://www.facebook.com/sharer.php?caption=After Flood Infographics on' + doc['Project Description'] + '&description=After Flood Infographics on' + doc['Project Description'] + '&u=https://infographics.afterflood.in/#/' + $route.params.language + '/' + doc['slug']" target="_blank">
-                    <img src="https://res.cloudinary.com/dck5rpuat/image/upload/v1535339958/fb-icon-coloured.png">
+                    <img src="/fb-icon-coloured.png">
                   </a>
                   <a class="sm-share-small" :href="'https://twitter.com/share?text=After Flood Infographics on' + doc['Project Description'] + '&hashtags=AfterFlood, Infographics, KeralaFloods' + '&url=https://infographics.afterflood.in/#/' + $route.params.language + '/' + doc['slug']" target="_blank">
-                    <img src="https://res.cloudinary.com/dck5rpuat/image/upload/v1535339958/twitter-icon-coloured.png">
+                    <img src="/twitter-icon-coloured.png">
                   </a>
                 </div>
               </div>

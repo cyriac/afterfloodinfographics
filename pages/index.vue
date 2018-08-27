@@ -5,7 +5,7 @@
       <b-card-group columns>
         <nuxt-link v-if="$store.state.languages" v-for="lang in $store.state.languages" :key="lang" :to="lang">
           <b-card class="lang-card" :title="lang">
-          	<img class="lang-img" :src="'https://res.cloudinary.com/dck5rpuat/image/upload/v1535347620/letters/' + lang.toLowerCase().trim() +'.png'">
+          	<img class="lang-img" :src="'/letters/' + lang.toLowerCase().trim() +'.png'">
           </b-card>
         </nuxt-link>
       </b-card-group>
@@ -20,9 +20,9 @@ export default{
 	    return {
 	      title: "After Flood Infographics",
 	      meta: [
-	        { name: "image", content: "https://res.cloudinary.com/dck5rpuat/image/upload/v1535380394/og-image.png" },
-	        { itemprop: "image", content: "https://res.cloudinary.com/dck5rpuat/image/upload/v1535380394/og-image.png" },
-	        { property: "og:image", content: "https://res.cloudinary.com/dck5rpuat/image/upload/v1535380394/og-image.png" },
+	        { name: "image", content: "https://infographics.afterflood.in/og-image.png" },
+	        { itemprop: "image", content: "https://infographics.afterflood.in/og-image.png" },
+	        { property: "og:image", content: "https://infographics.afterflood.in/og-image.png" },
 	        { property: "og:type", content: "website" },
 	        { property: "og:title", content: "After Flood Infographics" },
 	        { property: "og:description", content: "Concise, reliable and shareable infographics for health, environmental and social awareness during the time of rehabilitation after a natural disaster" },
