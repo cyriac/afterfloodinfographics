@@ -24,10 +24,10 @@
     			<p class="section-desc">Share on social media</p>
           <b-row class="mb-30">
     				<b-col>
-    	  				<a class="btn sm-btn sm-facebook" :href="'https://www.facebook.com/sharer.php?caption=After Flood Infographics on' + document['Project Description'] + '&description=After Flood Infographics on' + document['Project Description'] + '&u=https://infographics.afterflood.in/#/' + $route.fullPath" target="_blank">Share</a>
+    	  				<a class="btn sm-btn sm-facebook" :href="'https://www.facebook.com/sharer.php?caption=After Flood Infographics on' + document['Project Description'] + '&description=After Flood Infographics on' + document['Project Description'] + '&u=https://infographics.afterflood.in/' + $route.fullPath" target="_blank">Share</a>
     				</b-col>
             <b-col>
-    	  				<a class="btn sm-btn sm-twitter" :href="'https://twitter.com/share?text=After Flood Infographics on' + document['Project Description'] + '&hashtags=AfterFlood, Infographics, KeralaFloods' + '&url=https://infographics.afterflood.in/#/' + $route.fullPath" target="_blank">Tweet</a>
+    	  				<a class="btn sm-btn sm-twitter" :href="'https://twitter.com/share?text=After Flood Infographics on' + document['Project Description'] + '&hashtags=AfterFlood, Infographics, KeralaFloods' + '&url=https://infographics.afterflood.in/' + $route.fullPath" target="_blank">Tweet</a>
     				</b-col>
           </b-row>
   	  		<b-row v-if="other_languages.length > 0">
@@ -55,7 +55,10 @@ export default {
       meta: [
         { name: "image", content: this.document[this.$route.params.language+":png"] },
         { itemprop: "image", content: this.document[this.$route.params.language+":png"] },
-        { property: "og:image", name: "og:image", content: this.document[this.$route.params.language+":png"] },
+        { property: "og:image", content: this.document[this.$route.params.language+":png"] },
+        { property: "og:type", content: "website" },
+        { property: "og:title", content: this.document['Project Description'] || "" },
+        { property: "og:description", content: this.document['Project Description'] || "" },
         { property: "og:image:width", content: "160" },
         { property: "og:image:height", content: "236" },
       ]
