@@ -39,7 +39,6 @@ export default {
     let ogmeta = []
     if (this.$route.params.slug === undefined){
       ogmeta = [{ name: "image", content:"https://infographics.afterflood.in/ogheader.png" },
-                { itemprop: "image", content:"https://infographics.afterflood.in/ogheader.png" },
                 { property: "og:image", content:"https://infographics.afterflood.in/ogheader.png" },
                 { property: "og:description", content: "Concise, reliable and shareable infographics for health, environmental and social awareness during the time of rehabilitation after a natural disaster" }]
     }
