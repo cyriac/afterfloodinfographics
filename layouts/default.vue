@@ -36,16 +36,19 @@ export default {
     AppLogo
   },
   head () {
-    let ogmeta = []
-    if (this.$route.params.slug === undefined){
-      ogmeta = [{ name: "image", content:"https://infographics.afterflood.in/ogheader.png" },
-                { property: "og:image", content:"https://infographics.afterflood.in/ogheader.png" },
-                { property: "og:description", content: "Concise, reliable and shareable infographics for health, environmental and social awareness during the time of rehabilitation after a natural disaster" }]
-    }
-    return {
-      titleTemplate: `%s | After Flood Infographics`,
-      meta: ogmeta
-    }
+      return {
+        titleTemplate: `%s | After Flood Infographics`,
+        meta: [
+          { name: "image", content: "https://res.cloudinary.com/dck5rpuat/image/upload/v1535380394/og-image.png" },
+          { itemprop: "image", content: "https://res.cloudinary.com/dck5rpuat/image/upload/v1535380394/og-image.png" },
+          { property: "og:image", content: "https://res.cloudinary.com/dck5rpuat/image/upload/v1535380394/og-image.png" },
+          { property: "og:type", content: "website" },
+          { property: "og:title", content: "After Flood Infographics" },
+          { property: "og:description", content: "Concise, reliable and shareable infographics for health, environmental and social awareness during the time of rehabilitation after a natural disaster" },
+          { property: "og:image:width", content: "1200" },
+          { property: "og:image:height", content: "630" },
+        ]
+      }
   },
   mounted () {
     // Redirect old /#/ urls to new urls
