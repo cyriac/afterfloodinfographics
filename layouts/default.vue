@@ -19,12 +19,15 @@
     <b-container>
       <nuxt/>
     </b-container>
-    <footer class="text-center text-muted">
-      <hr />
-      <a v-b-tooltip.hover title="A crowd sourced data hub for all after flood precautions" class="text-muted" href="https://www.afterflood.in" target="_blank">#AfterFlood</a> •
-      <a v-b-tooltip.hover title="Source code" class="text-muted" href="https://github.com/cyriac/afterfloodinfographics" target="_blank">Github</a> •
-      <a v-b-tooltip.hover title="Images created by KeralaFloods Infographics" class="text-muted" href="https://www.facebook.com/KeralaFloodsInfo/" target="_blank">Facebook</a>
-    </footer>
+    <div class="gradient-overlay">
+      <b-container>
+        <footer class="text-right text-muted">
+          <a v-b-tooltip.hover title="A crowd sourced data hub for all after flood precautions" class="text-muted" href="https://www.afterflood.in" target="_blank">#AfterFlood</a> •
+          <a v-b-tooltip.hover title="Source code" class="text-muted" href="https://github.com/cyriac/afterfloodinfographics" target="_blank">Github</a> •
+          <a v-b-tooltip.hover title="Images created by KeralaFloods Infographics" class="text-muted" href="https://www.facebook.com/KeralaFloodsInfo/" target="_blank">Facebook</a>
+        </footer>
+      </b-container>
+    </div>
   </div>
 </template>
 
@@ -68,6 +71,7 @@ export default {
 <style lang="scss">
 body {
   background: #F6F6F6;
+  padding-bottom: 15vh;
 }
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6, p,
@@ -87,6 +91,23 @@ a {
 p {
   line-height: 1.6;
 }
+.gradient-overlay {
+  width: 100%;
+  text-align: center;
+  height: 15vh;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6f6f6+0,ffffff+75&0+0,1+75 */
+  background: -moz-linear-gradient(top, rgba(246,246,246,0) 0%, rgba(255,255,255,1) 75%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(246,246,246,0) 0%,rgba(255,255,255,1) 75%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(246,246,246,0) 0%,rgba(255,255,255,1) 75%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f6f6f6', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+  & + div {
+    position: relative;
+  }
+}
 .dropdown-toggle, .dropdown-item, .breadcrumb-item {
   text-transform: capitalize;
 }
@@ -97,7 +118,7 @@ p {
   }
 }
 footer {
-  margin: 20px 0;
+  margin: 10vh 0;
 }
 .breadcrumb {
   background: #ffffff;
