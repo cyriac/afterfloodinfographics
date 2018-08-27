@@ -55,7 +55,7 @@ export default {
       meta: [
         { name: "image", content: this.document[this.$route.params.language+":png"] },
         { itemprop: "image", content: this.document[this.$route.params.language+":png"] },
-        { name: "og:image", content: this.document[this.$route.params.language+":png"] }
+        { property: "og:image", name: "og:image", content: this.document[this.$route.params.language+":png"] }
       ]
     }
   },
