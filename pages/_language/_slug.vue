@@ -58,7 +58,7 @@ export default {
         { property: "og:image", content: this.document[this.$route.params.language+":png"] },
         { property: "og:type", content: "website" },
         { property: "og:title", content: this.document['Project Description'] || "" },
-        { property: "og:description", content: this.document['Project Description'] || "" },
+        { property: "og:description", content: "After Flood Infographics on " + (this.document['Project Description'] || "") },
         { property: "og:image:width", content: "160" },
         { property: "og:image:height", content: "236" },
       ]
