@@ -15,6 +15,9 @@ export const mutations = {
 }
 
 export const actions = {
+  async nuxtServerInit({ dispatch }){
+    await dispatch('GET_INDEX')
+  },
   async GET_INDEX ({ commit }) {
     let objects = await index.get_index()
     let languages = []

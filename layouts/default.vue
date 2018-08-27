@@ -46,9 +46,6 @@ export default {
       titleTemplate: `%s | After Flood Infographics`,
       meta: ogmeta
     }
-  },
-  mounted () {
-    this.$store.dispatch('GET_INDEX')
   }
 }
 </script>
