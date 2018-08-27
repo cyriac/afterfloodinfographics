@@ -15,10 +15,10 @@
           <a :href="document[$route.params.language + ':pdf']"
              target="_blank"
              v-if="document[$route.params.language + ':pdf'] !== undefined">
-            <span class="card btn-card mb-40">Dowload PDF</span>
+            <span class="card btn-card mb-30">Download PDF</span>
           </a>
     			<p class="section-desc">Share on social media</p>
-          <b-row class="mb-40">
+          <b-row class="mb-30">
     				<b-col>
     	  				<a class="btn sm-btn sm-facebook" :href="'https://www.facebook.com/sharer.php?caption=After Flood Infographics on' + document['Project Description'] + '&description=After Flood Infographics on' + document['Project Description'] + '&u=https://infographics.afterflood.in/#/' + $route.fullPath" target="_blank">Share</a>
     				</b-col>
@@ -138,15 +138,15 @@ export default {
 .sm-twitter{
 	background: #41aded;
 }
-.mb-40{
-	margin-bottom: 40px;
-}
 .btn-card{
 	color: #212529;
 	font-size: 0.9em;
 	padding: 10px 15px;
 	display: inline-block;
 	margin-right: 15px;
-	margin-bottom: 15px;
+	margin-bottom: 10px !important;
+}
+.mb-30{
+	margin-bottom: 30px !important;
 }
 </style>

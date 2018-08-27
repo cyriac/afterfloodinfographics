@@ -116,4 +116,7 @@ footer {
   font-size: 1.2em;
   margin:0;
 }
+.dropdown-item{
+  outline: none;
+}
 </style>
