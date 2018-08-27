@@ -38,7 +38,7 @@ export default {
   head () {
     let ogmeta = []
     if (this.$route.params.slug === undefined){
-      ogmeta = meta: [
+      ogmeta = [
           { name: "image", content: "https://res.cloudinary.com/dck5rpuat/image/upload/v1535380394/og-image.png" },
           { itemprop: "image", content: "https://res.cloudinary.com/dck5rpuat/image/upload/v1535380394/og-image.png" },
           { property: "og:image", content: "https://res.cloudinary.com/dck5rpuat/image/upload/v1535380394/og-image.png" },
