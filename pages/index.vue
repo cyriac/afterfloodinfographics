@@ -16,21 +16,6 @@
 
 <script>
 export default{
-	head () {
-	    return {
-	      title: "After Flood Infographics",
-	      meta: [
-	        { name: "image", content: "https://infographics.afterflood.in/og-image.png" },
-	        { itemprop: "image", content: "https://infographics.afterflood.in/og-image.png" },
-	        { property: "og:image", content: "https://infographics.afterflood.in/og-image.png" },
-	        { property: "og:type", content: "website" },
-	        { property: "og:title", content: "After Flood Infographics" },
-	        { property: "og:description", content: "Concise, reliable and shareable infographics for health, environmental and social awareness during the time of rehabilitation after a natural disaster" },
-	        { property: "og:image:width", content: "1200" },
-	        { property: "og:image:height", content: "630" },
-	      ]
-	    }
-	},
 
 	computed: {
 	  searchInLowerCase() {
