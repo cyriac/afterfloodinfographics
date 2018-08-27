@@ -9,8 +9,8 @@
       	    	<progressive-img class="full-width-image"
                                :src="getimgurl(document[$route.params.language + ':png'])"
                                v-if="document[$route.params.language + ':png'] !== undefined"
-                               placeholder="https://res.cloudinary.com/dck5rpuat/image/upload/v1535287279/placeholder.png"/>
-              <b-img src="https://res.cloudinary.com/dck5rpuat/image/upload/v1535287279/placeholder.png" class="full-width-image" v-else />
+                               placeholder="/placeholder.png"/>
+              <b-img src="/placeholder.png" class="full-width-image" v-else />
             </div>
           </no-ssr>
   	    </b-col>

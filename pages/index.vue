@@ -5,7 +5,7 @@
       <b-card-group columns>
         <nuxt-link v-if="$store.state.languages" v-for="lang in $store.state.languages" :key="lang" :to="lang">
           <b-card class="lang-card" :title="lang">
-          	<img class="lang-img" :src="'https://res.cloudinary.com/dck5rpuat/image/upload/v1535347620/letters/' + lang.toLowerCase().trim() +'.png'">
+          	<img class="lang-img" :src="'/letters/' + lang.toLowerCase().trim() +'.png'">
           </b-card>
         </nuxt-link>
       </b-card-group>
