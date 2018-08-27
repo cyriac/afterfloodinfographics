@@ -4,11 +4,15 @@
       <b-breadcrumb :items="breadcrumb_items"/>
       <b-row class="image-outer-container" v-if="document">
   	    <b-col cols="12" md="8">
-  	    	<progressive-img class="full-width-image"
-                           :src="getimgurl(document[$route.params.language + ':png'])"
-                           v-if="document[$route.params.language + ':png'] !== undefined"
-                           placeholder="https://res.cloudinary.com/dck5rpuat/image/upload/v1535287279/placeholder.png"/>
-          <b-img src="https://res.cloudinary.com/dck5rpuat/image/upload/v1535287279/placeholder.png" class="full-width-image" v-else />
+          <no-ssr>
+            <div>
+      	    	<progressive-img class="full-width-image"
+                               :src="getimgurl(document[$route.params.language + ':png'])"
+                               v-if="document[$route.params.language + ':png'] !== undefined"
+                               placeholder="https://res.cloudinary.com/dck5rpuat/image/upload/v1535287279/placeholder.png"/>
+              <b-img src="https://res.cloudinary.com/dck5rpuat/image/upload/v1535287279/placeholder.png" class="full-width-image" v-else />
+            </div>
+          </no-ssr>
   	    </b-col>
         <b-col cols="12" md="4">
     			<h2 class="section-header">{{ document['Project Description'] }}</h2>

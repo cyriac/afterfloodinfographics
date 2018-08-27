@@ -1,8 +1,4 @@
 module.exports = {
-  mode: 'spa',
-  router: {
-    mode: 'hash'
-  },
   /*
   ** Headers of the page
   */
@@ -54,7 +50,7 @@ module.exports = {
   ],
   plugins: [
     '~/plugins/filters.js',
-    '~/plugins/vue-progressive-image.js',
+    { src: '~/plugins/vue-progressive-image.js', ssr: false},
   ],
   /*
   ** Build configuration
