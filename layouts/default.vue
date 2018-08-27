@@ -36,9 +36,9 @@ export default {
     AppLogo
   },
   head () {
-      return {
-        titleTemplate: `%s | After Flood Infographics`,
-        meta: [
+    let ogmeta = []
+    if (this.$route.params.slug === undefined){
+      ogmeta = meta: [
           { name: "image", content: "https://res.cloudinary.com/dck5rpuat/image/upload/v1535380394/og-image.png" },
           { itemprop: "image", content: "https://res.cloudinary.com/dck5rpuat/image/upload/v1535380394/og-image.png" },
           { property: "og:image", content: "https://res.cloudinary.com/dck5rpuat/image/upload/v1535380394/og-image.png" },
@@ -48,7 +48,11 @@ export default {
           { property: "og:image:width", content: "1200" },
           { property: "og:image:height", content: "630" },
         ]
-      }
+    }
+    return {
+      titleTemplate: `%s | After Flood Infographics`,
+      meta: ogmeta
+    }
   },
   mounted () {
     // Redirect old /#/ urls to new urls
