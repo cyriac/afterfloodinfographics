@@ -3,7 +3,7 @@ let JSSoup = require('jssoup').default
 let URI = require('urijs')
 
 
-export function get_index () {
+function get_index () {
   const index_url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTU13hf_Tas-gzvuAxeUUOZh6EO1eKjcVCGAMguAQeYgEAAaGCV4buvfCkr03kqdbYyu6ZNJlbQ_wzI/pubhtml?gid=1650406682&single=true"
   return axios.get(index_url).then((response) => {
     let index_data = response.data
@@ -32,14 +32,12 @@ export function get_index () {
           let cellid = 0
           elem.contents.forEach((cell) => {
             if (cell.name === 'td') {
-              console.log(cell.contents)
               let value = null
               try {
                 value = cell.contents[0].attrs.href
                 let uri = URI(value)
                 value = uri.search(true)["q"]
               } catch (err) {
-                console.log(err)
                 value = cell.text
               }
               value = value.length === 0 ? null : value
@@ -63,3 +61,5 @@ export function get_index () {
     return objects
   })
 }
+
+module.exports = {'get_index': get_index}

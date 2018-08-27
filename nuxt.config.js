@@ -1,3 +1,5 @@
+const index = require('./plugins/get_index')
+
 module.exports = {
   /*
   ** Headers of the page
@@ -81,6 +83,32 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
+    }
+  },
+  generate: {
+    routes: async function () {
+       let objects = await index.get_index()
+       let routes = []
+
+       objects.forEach((elem) => {
+         Object.keys(elem).forEach((key) => {
+           if (key.endsWith(":pdf") || key.endsWith(":png")) {
+             let lang = key.split(":")[0]
+
+             let value = elem[key]
+             let l_slug = '/'+ lang + '/' + elem['slug']
+             if (value !== null) {
+               if (!routes.includes(l_slug)) {
+                 routes.push(l_slug)
+                 if (!routes.includes('/'+lang)) {
+                   routes.push('/'+lang)
+                 }
+               }
+             }
+           }
+         })
+       })
+       return routes
     }
   }
 }
