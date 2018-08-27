@@ -15,23 +15,23 @@
         <b-card-group columns>
           <nuxt-link :to="'/' + $route.params.language + '/' + doc['slug']" v-if="documents.length > 0" v-for="doc in documents" :key="doc.slug">
             <b-card :img-src="getimgurl(doc[$route.params.language + ':png'])" img-bottom v-if="doc[$route.params.language + ':png'] !== null" class="card-no-title">
-
-              <div class="card-footer" @click.native="preventDefault">
-              <div class="row">
-                <div class="col">
-                  <p class="share-info">Share infographic</p>
+              <no-ssr>
+                <div class="card-footer" @click.native="preventDefault">
+                  <div class="row">
+                    <div class="col">
+                      <p class="share-info">Share infographic</p>
+                    </div>
+                    <div class="col align-right">
+                      <a class="sm-share-small" :href="'https://www.facebook.com/sharer.php?caption=After Flood Infographics on' + doc['Project Description'] + '&description=After Flood Infographics on' + doc['Project Description'] + '&u=https://infographics.afterflood.in/#/' + $route.params.language + '/' + doc['slug']" target="_blank">
+                        <img src="/fb-icon-coloured.png">
+                      </a>
+                      <a class="sm-share-small" :href="'https://twitter.com/share?text=After Flood Infographics on' + doc['Project Description'] + '&hashtags=AfterFlood, Infographics, KeralaFloods' + '&url=https://infographics.afterflood.in/#/' + $route.params.language + '/' + doc['slug']" target="_blank">
+                        <img src="/twitter-icon-coloured.png">
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div class="col align-right">
-                  <a class="sm-share-small" :href="'https://www.facebook.com/sharer.php?caption=After Flood Infographics on' + doc['Project Description'] + '&description=After Flood Infographics on' + doc['Project Description'] + '&u=https://infographics.afterflood.in/#/' + $route.params.language + '/' + doc['slug']" target="_blank">
-                    <img src="/fb-icon-coloured.png">
-                  </a>
-                  <a class="sm-share-small" :href="'https://twitter.com/share?text=After Flood Infographics on' + doc['Project Description'] + '&hashtags=AfterFlood, Infographics, KeralaFloods' + '&url=https://infographics.afterflood.in/#/' + $route.params.language + '/' + doc['slug']" target="_blank">
-                    <img src="/twitter-icon-coloured.png">
-                  </a>
-                </div>
-              </div>
-            </div>
-
+              </no-ssr>
             </b-card>
             <b-card :title="doc['Project Description']" v-else></b-card>
 
