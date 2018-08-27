@@ -59,8 +59,8 @@ export default {
         { property: "og:type", content: "website" },
         { property: "og:title", content: this.document['Project Description'] || "" },
         { property: "og:description", content: "After Flood Infographics on " + (this.document['Project Description'] || "") },
-        { property: "og:image:width", content: "160" },
-        { property: "og:image:height", content: "236" },
+        { property: "og:image:width", content: "1200" },
+        { property: "og:image:height", content: "630" },
       ]
     }
   },
