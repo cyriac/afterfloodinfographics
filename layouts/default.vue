@@ -92,7 +92,7 @@ footer {
   display: inline-flex;
 }
 .card {
-  margin-bottom: 20px;
+  margin-bottom: 15px !important;
   border-radius: 4px;
   font-size: 1.0em !important;
   text-transform: capitalize;
