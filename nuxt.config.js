@@ -47,6 +47,9 @@ module.exports = {
   */
   loading: { color: '#FFFFFF' },
   modules: [
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-54992966-4'
+    }],
     '@nuxtjs/axios',
     ['bootstrap-vue/nuxt', { css: false }],
   ],
