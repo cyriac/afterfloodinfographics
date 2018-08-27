@@ -14,7 +14,12 @@
       <b-col cols="12">
         <b-card-group columns>
           <nuxt-link :to="'/' + $route.params.language + '/' + doc['slug']" v-if="documents.length > 0" v-for="doc in documents" :key="doc.slug">
-            <b-card :img-src="getimgurl(doc[$route.params.language + ':png'])" img-bottom v-if="doc[$route.params.language + ':png'] !== null" class="card-no-title">
+            <b-card v-if="doc[$route.params.language + ':png'] !== null" class="card-no-title">
+              <progressive-img class="full-width-image"
+                               :src="getimgurl(doc[$route.params.language + ':png'])"
+                               v-if="doc[$route.params.language + ':png'] !== null"
+                               placeholder="/placeholder.png"/>
+              <b-img src="/placeholder.png" class="full-width-image" v-else />
               <no-ssr>
                 <div class="card-footer" @click.native="preventDefault">
                   <div class="row">
