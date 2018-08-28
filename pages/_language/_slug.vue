@@ -1,6 +1,6 @@
 <template>
   <transition name="fade">
-    <div>
+    <div class="animated fadeIn">
       <b-breadcrumb :items="breadcrumb_items"/>
       <b-row class="image-outer-container" v-if="document">
   	    <b-col cols="12" md="8">

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="animated fadeIn">
     <b-navbar toggleable="md" type="dark" variant="dark">
       <b-container>
         <b-navbar-brand to="/"><app-logo /></b-navbar-brand>
@@ -30,6 +30,7 @@
     </div>
   </div>
 </template>
+
 
 <script>
 import AppLogo from '~/components/AppLogo.vue'
@@ -152,4 +153,7 @@ footer {
 .dropdown-item{
   outline: none;
 }
+</style>
+<style>
+  @import '~/static/css/animate.css';
 </style>

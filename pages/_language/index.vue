@@ -1,6 +1,6 @@
 <template>
   <transition name="fade">
-    <b-row>
+    <b-row class="animated fadeIn">
       <b-col cols="12">
         <b-row class="justify-content-between">
           <b-col cols="12" md="6">
