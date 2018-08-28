@@ -14,22 +14,23 @@
       <b-col cols="12">
         <b-card-group columns>
           <nuxt-link :to="'/' + $route.params.language + '/' + doc['slug']" v-if="documents.length > 0" v-for="doc in documents" :key="doc.slug">
-            <b-card v-if="doc[$route.params.language + ':png'] !== null" class="card-no-title">
-              <progressive-img class="card-image-full" :src="getimgurl(doc[$route.params.language + ':png'])" v-if="doc[$route.params.language + ':png'] !== null" placeholder="/placeholder.png"/>
-              <b-img src="/placeholder.png" class="full-width-image" v-else />
+            <b-card :title="doc['Project Description']" v-if="doc[$route.params.language + ':png'] !== null" class="card-no-title">
               <no-ssr>
-                <div class="card-footer" @click.native="preventDefault">
-                  <div class="row">
-                    <div class="col">
-                      <p class="share-info">Share infographic</p>
-                    </div>
-                    <div class="col align-right">
-                      <a class="sm-share-small" :href="'https://www.facebook.com/sharer.php?caption=After Flood Infographics on' + doc['Project Description'] + '&description=After Flood Infographics on' + doc['Project Description'] + '&u=https://infographics.afterflood.in/#/' + $route.params.language + '/' + doc['slug']" target="_blank">
-                        <img src="/fb-icon-coloured.png">
-                      </a>
-                      <a class="sm-share-small" :href="'https://twitter.com/share?text=After Flood Infographics on' + doc['Project Description'] + '&hashtags=AfterFlood, Infographics, KeralaFloods' + '&url=https://infographics.afterflood.in/#/' + $route.params.language + '/' + doc['slug']" target="_blank">
-                        <img src="/twitter-icon-coloured.png">
-                      </a>
+                <div>
+                  <progressive-img class="card-image-full" :src="getimgurl(doc[$route.params.language + ':png'])" v-if="doc[$route.params.language + ':png'] !== null" placeholder="/placeholder.png"/>
+                  <div class="card-footer" @click.native="preventDefault">
+                    <div class="row">
+                      <div class="col">
+                        <p class="share-info">Share infographic</p>
+                      </div>
+                      <div class="col align-right">
+                        <a class="sm-share-small" :href="'https://www.facebook.com/sharer.php?caption=After Flood Infographics on' + doc['Project Description'] + '&description=After Flood Infographics on' + doc['Project Description'] + '&u=https://infographics.afterflood.in/#/' + $route.params.language + '/' + doc['slug']" target="_blank">
+                          <img src="/fb-icon-coloured.png">
+                        </a>
+                        <a class="sm-share-small" :href="'https://twitter.com/share?text=After Flood Infographics on' + doc['Project Description'] + '&hashtags=AfterFlood, Infographics, KeralaFloods' + '&url=https://infographics.afterflood.in/#/' + $route.params.language + '/' + doc['slug']" target="_blank">
+                          <img src="/twitter-icon-coloured.png">
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -102,7 +103,9 @@ export default {
 <style scoped lang="scss">
 .card-no-title {
   position: relative;
-
+  .card-title {
+    display: none !important;
+  }
   .card-body {
     padding: 0px;
   }
