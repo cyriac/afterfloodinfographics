@@ -20,8 +20,8 @@ export default{
 	    return {
 	      title: "After Flood Infographics",
 	      meta: [
-	        { name: "image", content: "https://res.cloudinary.com/dck5rpuat/image/upload/v1535380394/og-image.png" },
-	        { itemprop: "image", content: "https://res.cloudinary.com/dck5rpuat/image/upload/v1535380394/og-image.png" },
+	        { name: "image", content: "https://infographics.afterflood.in/ogheader.png" },
+	        { itemprop: "image", content: "https://infographics.afterflood.in/ogheader.png" },
 	        { property: "og:image", content: "https://res.cloudinary.com/dck5rpuat/image/upload/v1535380394/og-image.png" },
 	        { property: "og:type", content: "website" },
 	        { property: "og:title", content: "After Flood Infographics" },
