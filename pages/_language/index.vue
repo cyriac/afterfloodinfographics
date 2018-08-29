@@ -14,20 +14,20 @@
       <b-col cols="12">
         <b-card-group columns>
           <nuxt-link :to="'/' + $route.params.language + '/' + doc['slug']" v-if="documents.length > 0" v-for="doc in documents" :key="doc.slug">
-            <b-card :title="doc['Project Description']" v-if="doc[$route.params.language + ':png'] !== null" class="card-no-title">
+            <b-card :title="doc.title" v-if="doc.languages[$route.params.language].png && doc.languages[$route.params.language].png.length > 0" class="card-no-title">
               <no-ssr>
                 <div>
-                  <progressive-img class="card-image-full" :src="getimgurl(doc[$route.params.language + ':png'])" v-if="doc[$route.params.language + ':png'] !== null" placeholder="/placeholder.png"/>
+                  <progressive-img class="card-image-full" :src="getimgurl(doc.languages[$route.params.language].png[0])" placeholder="/placeholder.png"/>
                   <div class="card-footer" @click.native="preventDefault">
                     <div class="row">
                       <div class="col">
                         <p class="share-info">Share infographic</p>
                       </div>
                       <div class="col align-right">
-                        <a class="sm-share-small" :href="'https://www.facebook.com/sharer.php?caption=After Flood Infographics on' + doc['Project Description'] + '&description=After Flood Infographics on' + doc['Project Description'] + '&u=https://infographics.afterflood.in/#/' + $route.params.language + '/' + doc['slug']" target="_blank">
+                        <a class="sm-share-small" :href="'https://www.facebook.com/sharer.php?caption=After Flood Infographics on' + doc.title + '&description=After Flood Infographics on' + doc.title + '&u=https://infographics.afterflood.in/#/' + $route.params.language + '/' + doc['slug']" target="_blank">
                           <img src="/fb-icon-coloured.png">
                         </a>
-                        <a class="sm-share-small" :href="'https://twitter.com/share?text=After Flood Infographics on' + doc['Project Description'] + '&hashtags=AfterFlood, Infographics, KeralaFloods' + '&url=https://infographics.afterflood.in/#/' + $route.params.language + '/' + doc['slug']" target="_blank">
+                        <a class="sm-share-small" :href="'https://twitter.com/share?text=After Flood Infographics on' + doc.title + '&hashtags=AfterFlood, Infographics, KeralaFloods' + '&url=https://infographics.afterflood.in/#/' + $route.params.language + '/' + doc['slug']" target="_blank">
                           <img src="/twitter-icon-coloured.png">
                         </a>
                       </div>
@@ -36,8 +36,7 @@
                 </div>
               </no-ssr>
             </b-card>
-            <b-card :title="doc['Project Description']" v-else></b-card>
-
+            <b-card :title="doc.title" v-else></b-card>
           </nuxt-link>
         </b-card-group>
       </b-col>
@@ -67,7 +66,11 @@ export default {
       e.preventDefault();
     },
     getimgurl (drive_url) {
-      return this.$options.filters.getGoogleImgUrl(this.$options.filters.getGoogleID(drive_url))
+      try {
+        return this.$options.filters.getGoogleImgUrl(this.$options.filters.getGoogleID(drive_url))
+      } catch (err) {
+        return  "/placeholder.png";
+      }
     }
   },
   computed: {
@@ -84,7 +87,13 @@ export default {
       let documents = []
       if (this.$store.state.index !== null) {
         documents = this.$store.state.index.filter((elem) => {
-          return (elem[this.$route.params.language+":png"] !== null || elem[this.$route.params.language+":pdf"] !== null)
+          let val = false
+          if (elem.languages !== undefined && elem.languages !== null) {
+            if (Object.keys(elem.languages).includes(this.$route.params.language)) {
+              val = true
+            }
+          }
+          return val
         })
       }
       if (this.search.length > 0) {

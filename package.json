@@ -17,6 +17,7 @@
     "@nuxtjs/google-analytics": "^2.0.2",
     "bootstrap-vue": "^2.0.0-rc.11",
     "htmlparser": "^1.7.7",
+    "js-yaml": "^3.12.0",
     "jssoup": "0.0.9",
     "nuxt": "^1.0.0",
     "urijs": "^1.19.1",

@@ -5,35 +5,35 @@
       <b-row class="image-outer-container" v-if="document">
   	    <b-col cols="12" md="8">
           <no-ssr>
-            <div>
-      	    	<progressive-img class="full-width-image"
-                               :src="getimgurl(document[$route.params.language + ':png'])"
-                               v-if="document[$route.params.language + ':png'] !== undefined"
-                               placeholder="/placeholder.png"/>
-              <b-img src="/placeholder.png" class="full-width-image" v-else />
+            <div v-for="(png, index) in document.languages[$route.params.language].png"
+                 :key="index"
+                 v-if="document.languages !== undefined && document.languages[$route.params.language] !== undefined && document.languages[$route.params.language].png.length > 0">
+                 <progressive-img class="full-width-image"
+                                  :src="getimgurl(png)"
+                                  placeholder="/placeholder.png"/> -->
             </div>
           </no-ssr>
   	    </b-col>
         <b-col cols="12" md="4">
-    			<h2 class="section-header">{{ document['Project Description'] }}</h2>
-          <a :href="document[$route.params.language + ':pdf']"
+    			<h2 class="section-header">{{ document.title }}</h2>
+          <a :href="document.languages[$route.params.language].pdf"
              target="_blank"
-             v-if="document[$route.params.language + ':pdf'] !== undefined">
+             v-if="document.languages[$route.params.language].pdf !== undefined">
             <span class="card btn-card mb-30">Download PDF</span>
           </a>
     			<p class="section-desc">Share on social media</p>
           <b-row class="mb-30">
     				<b-col>
-    	  				<a class="btn sm-btn sm-facebook" :href="'https://www.facebook.com/sharer.php?caption=After Flood Infographics on' + document['Project Description'] + '&description=After Flood Infographics on' + document['Project Description'] + '&u=https://infographics.afterflood.in/' + $route.fullPath" target="_blank">Share</a>
+    	  			<a class="btn sm-btn sm-facebook" :href="'https://www.facebook.com/sharer.php?caption=After Flood Infographics on' + document.title + '&description=After Flood Infographics on ' + document.title + '&u=https://infographics.afterflood.in/' + $route.fullPath" target="_blank">Share</a>
     				</b-col>
             <b-col>
-    	  				<a class="btn sm-btn sm-twitter" :href="'https://twitter.com/share?text=After Flood Infographics on' + document['Project Description'] + '&hashtags=AfterFlood, Infographics, KeralaFloods' + '&url=https://infographics.afterflood.in/' + $route.fullPath" target="_blank">Tweet</a>
+    	  			<a class="btn sm-btn sm-twitter" :href="'https://twitter.com/share?text=After Flood Infographics on ' + document.title + '&hashtags=AfterFlood, Infographics, KeralaFloods' + '&url=https://infographics.afterflood.in/' + $route.fullPath" target="_blank">Tweet</a>
     				</b-col>
           </b-row>
   	  		<b-row v-if="other_languages.length > 0">
             <b-col>
               <p class="section-desc">This infographic is available in the following languages as well:</p>
-              <nuxt-link :to="'/' + lang + '/' + document['slug']" v-for="lang in other_languages" :key="lang">
+              <nuxt-link :to="'/' + lang + '/' + document.slug" v-for="lang in other_languages" :key="lang">
                 <span class="card btn-card">{{ lang }}</span>
               </nuxt-link>
             </b-col>
@@ -51,14 +51,14 @@ import getGoogleID from '~/plugins/filters'
 export default {
   head () {
     return {
-      title: this.document['Project Description'] || "",
+      title: this.document.title || "",
       meta: [
-        { name: "image", content: this.document[this.$route.params.language+":png"] },
-        { itemprop: "image", content: this.document[this.$route.params.language+":png"] },
-        { property: "og:image", content: this.document[this.$route.params.language+":png"] },
+        { name: "image", content: this.document.languages[this.$route.params.language].png[0] },
+        { itemprop: "image", content: this.document.languages[this.$route.params.language].png[0] },
+        { property: "og:image", content: this.document.languages[this.$route.params.language].png[0] },
         { property: "og:type", content: "website" },
-        { property: "og:title", content: this.document['Project Description'] || "" },
-        { property: "og:description", content: "After Flood Infographics on " + (this.document['Project Description'] || "") },
+        { property: "og:title", content: this.document.title || "" },
+        { property: "og:description", content: "After Flood Infographics on " + (this.document.title || "") },
         { property: "og:image:width", content: "1200" },
         { property: "og:image:height", content: "630" },
       ]
@@ -80,7 +80,7 @@ export default {
       }]
       if (this.document !== null) {
         items.push({
-          text: this.document['Project Description'],
+          text: this.document.title,
           active: true
         })
       }
@@ -90,24 +90,22 @@ export default {
       let documents = []
       if (this.$store.state.index !== null) {
         documents = this.$store.state.index.filter((elem) => {
-          return (elem[this.$route.params.language+":png"] !== null || elem[this.$route.params.language+":pdf"] !== null) && (elem['slug'] === this.$route.params.slug)
+          let val = false
+          if (elem['slug'] === this.$route.params.slug) {
+            if (elem.languages !== undefined && elem.languages !== null) {
+              if (Object.keys(elem.languages).includes(this.$route.params.language)) {
+                val = true
+              }
+            }
+          }
+          return val
         })
         documents = documents.length !== 0 ? documents[0] : null
       }
       return documents
     },
     other_languages () {
-      let other_languages = []
-      Object.keys(this.document).forEach((key) => {
-        if (key.endsWith(":png")){
-          let value = this.document[key]
-          let lang = key.split(":")[0]
-          if (value !== null && lang !== this.$route.params.language) {
-            other_languages.push(lang)
-          }
-        }
-      })
-      return other_languages;
+      return Object.keys(this.document.languages)
     }
   }
 }
