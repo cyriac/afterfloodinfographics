@@ -24,7 +24,8 @@
         <footer class="text-right text-muted">
           <a v-b-tooltip.hover title="A crowd sourced data hub for all after flood precautions" class="text-muted" href="https://www.afterflood.in" target="_blank">#AfterFlood</a> •
           <a v-b-tooltip.hover title="Source code" class="text-muted" href="https://github.com/cyriac/afterfloodinfographics" target="_blank">Github</a> •
-          <a v-b-tooltip.hover title="Images created by KeralaFloods Infographics" class="text-muted" href="https://www.facebook.com/KeralaFloodsInfo/" target="_blank">Facebook</a>
+          <a v-b-tooltip.hover title="Images created by KeralaFloods Infographics" class="text-muted" href="https://www.facebook.com/KeralaFloodsInfo/" target="_blank">Facebook</a> •
+          <nuxt-link v-b-tooltip.hover title="See an overview of all infographics" class="text-muted" to="/list/">Overview</nuxt-link>
         </footer>
       </b-container>
     </div>
@@ -76,13 +77,15 @@ body {
 }
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6, p,
-.btn,
 .nav,
 .navbar-brand,
 .card-link,
 .pagination, a {
   font-family: 'Open Sans', "Helvetica Neue", Arial, sans-serif;
   color: #212529;
+}
+.btn {
+  font-family: 'Open Sans', "Helvetica Neue", Arial, sans-serif;
 }
 a {
   &:hover, &:focus, &:active {
