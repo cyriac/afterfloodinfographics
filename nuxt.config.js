@@ -100,22 +100,18 @@ module.exports = {
        let routes = []
 
        objects.forEach((elem) => {
-         Object.keys(elem).forEach((key) => {
-           if (key.endsWith(":pdf") || key.endsWith(":png")) {
-             let lang = key.split(":")[0]
-
-             let value = elem[key]
-             let l_slug = '/'+ lang + '/' + elem['slug']
-             if (value !== null) {
-               if (!routes.includes(l_slug)) {
-                 routes.push(l_slug)
-                 if (!routes.includes('/'+lang)) {
-                   routes.push('/'+lang)
-                 }
-               }
+         if (elem.languages !== undefined && Object.keys(elem.languages).length > 0) {
+           let languages = Object.keys(elem.languages)
+           languages.forEach((lang) => {
+             if (!routes.includes(lang)) {
+               routes.push('/' + lang)
              }
-           }
-         })
+             let slug_url = '/' + lang + '/' + elem.slug
+             if (!routes.includes(slug_url)) {
+               routes.push(slug_url)
+             }
+           })
+         }
        })
        return routes
     }

@@ -10,7 +10,7 @@
                  v-if="document.languages !== undefined && document.languages[$route.params.language] !== undefined && document.languages[$route.params.language].png.length > 0">
                  <progressive-img class="full-width-image"
                                   :src="getimgurl(png)"
-                                  placeholder="/placeholder.png"/> -->
+                                  placeholder="/placeholder.png"/>
             </div>
           </no-ssr>
   	    </b-col>

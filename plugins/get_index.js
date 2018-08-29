@@ -13,7 +13,6 @@ function get_index () {
     index_data.forEach((elem, index) => {
       elem['slug'] = elem['title'].trim().toLowerCase().replace(/\s+/g, '-').replace(/[^\w\-]+/g, '').replace(/\-\-+/g, '-').trim()
     })
-    console.log(index_data)
     return index_data
   })
 }

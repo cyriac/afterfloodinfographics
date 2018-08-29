@@ -2,17 +2,6 @@
 - id: '1'
   title: Water Purification
   languages:
-      bangla:
-        pdf: https://drive.google.com/file/d/1t4n-QBvAkkBcdJVfCfevX3m2BT-3Mb5t/view
-        png:
-        - https://drive.google.com/file/d/1WYMPai_-1W3LAQ82RIrHbnEW-6xxJVaP/view?usp=sharing
-      kannada:
-        png:
-        - https://drive.google.com/open?id=1ycM-GG9QcmczIYoH1ZdD0jVfEEdUIISg
-      hindi:
-        pdf: https://drive.google.com/open?id=1jO_RmUQ52-7KBf5CMaHosfIK_1rCp0Jj
-        png:
-        - https://drive.google.com/open?id=1XM_8cGGJjJik7UhAKHknADfYa349jZj3
       english:
         pdf: https://drive.google.com/open?id=1l8nxN2FCG5sffd1_ptUQh1XEFKZMBbqL
         png:
@@ -25,6 +14,17 @@
         pdf: https://drive.google.com/open?id=1ul5wrBMvOn8Ko-UUbNNilU_E8532uxM2
         png:
         - https://drive.google.com/open?id=1e89Qnxjl4FMDKtiQOOnMxCnmpOnf9BMR
+      hindi:
+        pdf: https://drive.google.com/open?id=1jO_RmUQ52-7KBf5CMaHosfIK_1rCp0Jj
+        png:
+        - https://drive.google.com/open?id=1XM_8cGGJjJik7UhAKHknADfYa349jZj3
+      bangla:
+        pdf: https://drive.google.com/file/d/1t4n-QBvAkkBcdJVfCfevX3m2BT-3Mb5t/view
+        png:
+        - https://drive.google.com/file/d/1WYMPai_-1W3LAQ82RIrHbnEW-6xxJVaP/view?usp=sharing
+      kannada:
+        png:
+        - https://drive.google.com/open?id=1ycM-GG9QcmczIYoH1ZdD0jVfEEdUIISg
 - id: '3.1'
   title: Unplug Appliances
   languages:
