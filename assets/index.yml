@@ -212,9 +212,17 @@
         pdf: https://drive.google.com/file/d/1jW826elqLCGSOGd287qcyrbyUzCxS728/view?usp=sharing
         png:
         - https://drive.google.com/open?id=1wVzx6VX6vZshXRuOkAnC7K83LF2LfWtg
+        - https://drive.google.com/open?id=124-ym9vwEq4ZgT3TzeUxJjKoke7MR2DK
       english:
         pdf: https://drive.google.com/file/d/13-lDywBmvSICFEmUuBdYHRb5qIUd4cz9/view?usp=sharing
-        png: []
+        png:
+        - https://drive.google.com/open?id=12E0ggwnb8iL5j4eckmxdUdUKRDSP0Rrr
+        - https://drive.google.com/open?id=1VTM1hHgqBWFjoiwYDz-RW1DQjkuPYUBr
+      tamil:
+        pdf: https://drive.google.com/open?id=1wLxTkvE-tKmOUmX08GhNMj2uCidJ3vnI
+        png:
+        - https://drive.google.com/open?id=112xVZ88KfUFE2dSfOHnJ9XXV7_zOW8Mq
+        - https://drive.google.com/open?id=15Rp2nxNgXHsFsMvosPgTskzlbH28wfK7
 - id: '10'
   title: Disposing Animal Corpse
   languages:
@@ -264,13 +272,30 @@
 - id: '12'
   title: Mental Health
   languages:
+      malayalam:
+        pdf: https://drive.google.com/open?id=1RxI5zTW_i8-zq6qM8a3cwuOsOr9qa5t4
+        png: 
+        - https://drive.google.com/open?id=1BRSXinojLKEzXk2mEwlATmPVR-ldpLJ3
+        - https://drive.google.com/open?id=12jalwlf6HmWkTEAwMFMRvVY-t-LpX3iQ
+        - https://drive.google.com/open?id=1boCJsBthj4CjDVyrMarOzUHBYDKiRwPb
+        - https://drive.google.com/open?id=131KWIBNyh1zZH1gAA2kuWP5Walfef8il
       tamil:
         pdf: https://drive.google.com/open?id=1gbak9EoSKWB43QoO65dnxUMOQ3fSnMEw
         png:
-        - https://drive.google.com/drive/folders/1gDqmf_5ZYfFnKKAPzLA2DM7dRuI8_pYq
+        - https://drive.google.com/open?id=1jBUVGhDiYggC_bzMj_bDii2-Z47Bw3b3
+        - https://drive.google.com/open?id=15_7rSaTyr69PYTA0C3Vk7U_yaULzoQgX
+        - https://drive.google.com/open?id=1mZkbJnSCrXJEvhzfFDH_R6PXKh0-ww38
       english:
         pdf: https://drive.google.com/open?id=1azH_wVSqP8XIjqZqSpcqkQvGN44J6jSK
-        png: []
+        png: 
+        - https://drive.google.com/open?id=14lUF_RaCFxXrVKO5-upw6tDQckW661Vk
+        - https://drive.google.com/open?id=1r7uhfJTk2QZG_xb9rrPIOjcGJF17_sAn
+        - https://drive.google.com/open?id=1X5H7kh9PGLUmVG4Ttq-2BR9qRUiZFEp-
+       hindi:
+        png:
+        - https://drive.google.com/open?id=1MPRmnSFRTnotOqbr3vQeAmcIXc02VwGm
+        - https://drive.google.com/open?id=1cNuaMVIdQN4mgTbP53pNbvqNgfkuLt-0
+        - https://drive.google.com/open?id=13HjUVAgovidhD8oyaUZQX0sRosUmUe1D
 - id: '17.3'
   title: Snake Bite Prevention
   languages:
