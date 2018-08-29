@@ -5,7 +5,7 @@ let yaml = require('js-yaml')
 
 
 function get_index () {
-  const index_url = "https://raw.githubusercontent.com/cyriac/afterfloodinfographics/index_yaml/assets/index.yml"
+  const index_url = "https://raw.githubusercontent.com/cyriac/afterfloodinfographics/master/assets/index.yml"
   return axios.get(index_url).then((response) => {
     let index_data = yaml.load(response.data)
 
