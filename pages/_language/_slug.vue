@@ -131,11 +131,11 @@ export default {
 	padding: 15px;
 	border-radius: 4px;
 	text-align:center;
-	color: #fff;
+	color: #fff !important;
 	font-weight: 600;
 	text-decoration: none;
 	&:hover, &:visited, &:focus{
-		color: #fff;
+		color: #fff !important;
 		text-decoration: none;
 	}
 }
