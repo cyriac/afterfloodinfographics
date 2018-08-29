@@ -22,7 +22,7 @@ export default{
 	      meta: [
 	        { name: "image", content: "https://infographics.afterflood.in/ogheader.png" },
 	        { itemprop: "image", content: "https://infographics.afterflood.in/ogheader.png" },
-	        { property: "og:image", content: "https://res.cloudinary.com/dck5rpuat/image/upload/v1535380394/og-image.png" },
+	        { property: "og:image", content: "https://infographics.afterflood.in/ogheader.png" },
 	        { property: "og:type", content: "website" },
 	        { property: "og:title", content: "After Flood Infographics" },
 	        { property: "og:description", content: "Concise, reliable and shareable infographics for health, environmental and social awareness during the time of rehabilitation after a natural disaster" },
