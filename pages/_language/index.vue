@@ -119,14 +119,14 @@ export default {
   .card-body {
     padding: 0px;
   }
-  .card-img-bottom {
+  .card-image-full {
     border-top: 0;
     filter: grayscale(100%);
     margin-bottom: 30px;
     transition: all 0.1s ease-in;
   }
   &:hover, &:focus, &:active {
-    .card-img-bottom {
+    .card-image-full {
       filter: grayscale(0);
     }
   }
