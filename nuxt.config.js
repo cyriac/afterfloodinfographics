@@ -15,7 +15,7 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Infographics about flood rehabilitation' },
+      { hid: 'description', name: 'description', content: 'Concise, reliable and shareable infographics for health, environmental and social awareness during the time of rehabilitation after a natural disaster' },
       { name: "og:type", content: "website" },
       { name: "msapplication-TileColor", content: "#ffffff" },
       { name: "msapplication-TileImage", content: "/ms-icon-144x144.png" },
