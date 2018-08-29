@@ -274,7 +274,7 @@
   languages:
       malayalam:
         pdf: https://drive.google.com/open?id=1RxI5zTW_i8-zq6qM8a3cwuOsOr9qa5t4
-        png: 
+        png:
         - https://drive.google.com/open?id=1BRSXinojLKEzXk2mEwlATmPVR-ldpLJ3
         - https://drive.google.com/open?id=12jalwlf6HmWkTEAwMFMRvVY-t-LpX3iQ
         - https://drive.google.com/open?id=1boCJsBthj4CjDVyrMarOzUHBYDKiRwPb
@@ -287,11 +287,11 @@
         - https://drive.google.com/open?id=1mZkbJnSCrXJEvhzfFDH_R6PXKh0-ww38
       english:
         pdf: https://drive.google.com/open?id=1azH_wVSqP8XIjqZqSpcqkQvGN44J6jSK
-        png: 
+        png:
         - https://drive.google.com/open?id=14lUF_RaCFxXrVKO5-upw6tDQckW661Vk
         - https://drive.google.com/open?id=1r7uhfJTk2QZG_xb9rrPIOjcGJF17_sAn
         - https://drive.google.com/open?id=1X5H7kh9PGLUmVG4Ttq-2BR9qRUiZFEp-
-       hindi:
+      hindi:
         png:
         - https://drive.google.com/open?id=1MPRmnSFRTnotOqbr3vQeAmcIXc02VwGm
         - https://drive.google.com/open?id=1cNuaMVIdQN4mgTbP53pNbvqNgfkuLt-0
