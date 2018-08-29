@@ -4,16 +4,10 @@
       <b-breadcrumb :items="breadcrumb_items"/>
       <b-row class="image-outer-container" v-if="document">
   	    <b-col cols="12" md="8">
-          <no-ssr>
-            <div v-for="(png, index) in document.languages[$route.params.language].png"
-                 :key="index"
-                 v-if="document.languages !== undefined && document.languages[$route.params.language] !== undefined && document.languages[$route.params.language].png.length > 0">
-                 <progressive-img class="full-width-image"
-                                  :src="getimgurl(png)"
-                                  placeholder="/placeholder.png"/>
-            </div>
-          </no-ssr>
+          <InfographicsCarousel :images="document.languages[$route.params.language].png"
+                                v-if="document.languages !== undefined && document.languages[$route.params.language] !== undefined && document.languages[$route.params.language].png.length > 0"/>
   	    </b-col>
+
         <b-col cols="12" md="4">
     			<h2 class="section-header">{{ document.title }}</h2>
           <a :href="document.languages[$route.params.language].pdf"
@@ -48,7 +42,12 @@
 <script>
 import getGoogleImgUrl from '~/plugins/filters'
 import getGoogleID from '~/plugins/filters'
+import InfographicsCarousel from '~/components/InfographicsCarousel.vue'
+
 export default {
+  components: {
+    InfographicsCarousel
+  },
   head () {
     return {
       title: this.document.title || "",
@@ -67,6 +66,12 @@ export default {
   methods:{
     getimgurl (drive_url) {
       return this.$options.filters.getGoogleImgUrl(this.$options.filters.getGoogleID(drive_url))
+    },
+    onSlideStart (slide) {
+      this.sliding = true
+    },
+    onSlideEnd (slide) {
+      this.sliding = false
     }
   },
   computed: {

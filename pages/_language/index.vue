@@ -16,8 +16,9 @@
           <nuxt-link :to="'/' + $route.params.language + '/' + doc['slug']" v-if="documents.length > 0" v-for="doc in documents" :key="doc.slug">
             <b-card :title="doc.title" v-if="doc.languages[$route.params.language].png && doc.languages[$route.params.language].png.length > 0" class="card-no-title">
               <div>
-                <!-- <progressive-img class="card-image-full" :src="getimgurl(doc.languages[$route.params.language].png[0])" placeholder="/placeholder.png"/> -->
-                <b-img :src="getimgurl(doc.languages[$route.params.language].png[0])" class="card-image-full w-100" />
+                <no-ssr>
+                  <InfographicsCarousel :images="doc.languages[$route.params.language].png" />
+                </no-ssr>
                 <no-ssr>
                   <div class="card-footer" @click.native="preventDefault">
                     <div class="row">
@@ -48,8 +49,12 @@
 <script>
 import getGoogleImgUrl from '~/plugins/filters'
 import getGoogleID from '~/plugins/filters'
+import InfographicsCarousel from '~/components/InfographicsCarousel.vue'
 
 export default {
+  components: {
+    InfographicsCarousel
+  },
   data () {
     return {
       search: ""
