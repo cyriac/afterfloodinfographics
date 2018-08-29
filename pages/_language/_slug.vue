@@ -5,12 +5,14 @@
       <b-row class="image-outer-container" v-if="document">
   	    <b-col cols="12" md="8">
           <no-ssr>
-            <div v-for="(png, index) in document.languages[$route.params.language].png"
-                 :key="index"
-                 v-if="document.languages !== undefined && document.languages[$route.params.language] !== undefined && document.languages[$route.params.language].png.length > 0">
-                 <progressive-img class="full-width-image"
-                                  :src="getimgurl(png)"
-                                  placeholder="/placeholder.png"/>
+            <div>
+              <div v-for="(png, index) in document.languages[$route.params.language].png"
+                   :key="index"
+                   v-if="document.languages !== undefined && document.languages[$route.params.language] !== undefined && document.languages[$route.params.language].png.length > 0">
+                   <progressive-img class="full-width-image"
+                                    :src="getimgurl(png)"
+                                    placeholder="/placeholder.png"/>
+              </div>
             </div>
           </no-ssr>
   	    </b-col>
@@ -116,7 +118,6 @@ export default {
 	width: 100%;
 	border-radius: 4px;
 	border: 1px solid #ddd;
-	margin-bottom: 50px;
 }
 .section-header{
 	font-size: 2em;
