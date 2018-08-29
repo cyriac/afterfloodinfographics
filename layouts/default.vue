@@ -138,6 +138,11 @@ footer {
     box-shadow: 0px 5px 15px rgba(0,0,0,0.1) !important;
   }
 }
+.card-columns {
+  .card {
+    display: inline-flex;
+  }
+}
 .card-img-bottom {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
