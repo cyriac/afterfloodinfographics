@@ -1,13 +1,12 @@
 ---
 - id: '1'
-  description: Water Purification
+  title: Water Purification
   languages:
       bangla:
         pdf: https://drive.google.com/file/d/1t4n-QBvAkkBcdJVfCfevX3m2BT-3Mb5t/view
         png:
         - https://drive.google.com/file/d/1WYMPai_-1W3LAQ82RIrHbnEW-6xxJVaP/view?usp=sharing
       kannada:
-        pdf:
         png:
         - https://drive.google.com/open?id=1ycM-GG9QcmczIYoH1ZdD0jVfEEdUIISg
       hindi:
@@ -27,7 +26,7 @@
         png:
         - https://drive.google.com/open?id=1e89Qnxjl4FMDKtiQOOnMxCnmpOnf9BMR
 - id: '3.1'
-  description: Unplug Appliances
+  title: Unplug Appliances
   languages:
       malayalam:
         pdf: https://drive.google.com/file/d/1N6m6IWw8-WNK3zuycHRT4bjAt4Q5-U8x/view
@@ -50,7 +49,7 @@
         png:
         - https://drive.google.com/file/d/1Ks9nttp4C5yYWWXDP0ulI0mHFsXkUC5k/view?usp=sharing
 - id: '3.2'
-  description: Dengue Prevention Tips
+  title: Dengue Prevention Tips
   languages:
       malayalam:
         pdf: https://drive.google.com/file/d/1feKcfFMfV0_JeDCEQBYI4q5-ne5Nb8nf/view?usp=sharing
@@ -69,7 +68,7 @@
         png:
         - https://drive.google.com/file/d/1Tw9JBn3MtjgkVPgtAX8-CyQd8yaXaoMs/view?usp=sharing
 - id: '3.3'
-  description: Dont go with kids
+  title: Dont go with kids
   languages:
       malayalam:
         pdf: https://drive.google.com/file/d/1XCPKH3yAP_x5sEhwyqnbOeWreJblK82X/view?usp=sharing
@@ -92,7 +91,7 @@
         png:
         - https://drive.google.com/file/d/11NO3Y7O92x2CfZTKxAtuqlq8oCtkFRTK/view?usp=sharing
 - id: '3.4'
-  description: Dead bodies
+  title: Dead bodies
   languages:
       malayalam:
         pdf: https://drive.google.com/file/d/1BtobpXq4KZkFhgO0J4b7tq8F-YI-lo_K/view
@@ -115,7 +114,7 @@
         png:
         - https://drive.google.com/file/d/1gAardHsK0ymuGKjcGbBbcylq-54HMamb/view
 - id: '3.5'
-  description: Check Walls and Gates
+  title: Check Walls and Gates
   languages:
       malayalam:
         pdf: https://drive.google.com/file/d/1BNn6IjvsYllXOuLRmn8PNEHYLQicvM7Z/view?usp=sharing
@@ -138,7 +137,7 @@
         png:
         - https://drive.google.com/file/d/12qjb19SKNfG-ZLnpbpjoxL2bihxBec8Y/view?usp=sharing
 - id: '3.6'
-  description: Do Not Enter Home at Night
+  title: Do Not Enter Home at Night
   languages:
       malayalam:
         pdf: https://drive.google.com/file/d/1B_fHLf_NjlCYwSIAnf1okfiG3dgdJTx4/view?usp=sharing
@@ -161,7 +160,7 @@
         png:
         - https://drive.google.com/file/d/13dJZVptdjw5rQMLcD46iBkpXe-RZIPcq/view?usp=sharing
 - id: '3.7'
-  description: Checking house before entering
+  title: Checking house before entering
   languages:
       malayalam:
         pdf: https://drive.google.com/file/d/122aXRcPGFArU9mcT0SdQBcypJ9wZXZ1X/view?usp=sharing
@@ -184,7 +183,7 @@
         png:
         - https://drive.google.com/file/d/1ptoQzCbetQor3t6xdFw5lZQKPvVO6cwt/view?usp=sharing
 - id: '3.8'
-  description: Before entering Flooded home
+  title: Before entering Flooded home
   languages:
       malayalam:
         pdf: https://drive.google.com/file/d/17UNkja-gC0iDJNTZRpYbnyCNS4OOsO5U/view?usp=sharing
@@ -207,7 +206,7 @@
         png:
         - https://drive.google.com/file/d/1ITIUiSsyArSAW7mEENVjR6q7m4WH4HJ3/view?usp=sharing
 - id: '4'
-  description: Leptospirosis
+  title: Leptospirosis
   languages:
       malayalam:
         pdf: https://drive.google.com/file/d/1jW826elqLCGSOGd287qcyrbyUzCxS728/view?usp=sharing
@@ -217,7 +216,7 @@
         pdf: https://drive.google.com/file/d/13-lDywBmvSICFEmUuBdYHRb5qIUd4cz9/view?usp=sharing
         png: []
 - id: '10'
-  description: Disposing Animal Corpse
+  title: Disposing Animal Corpse
   languages:
       malayalam:
         pdf: https://drive.google.com/open?id=1fB5JwfUQVthYuEBoKnCmedmItgjEnkMM
@@ -240,7 +239,7 @@
         png:
         - https://drive.google.com/open?id=1SRBE6SsvSUvvlMuQaKPuonJO_egh6v0S
 - id: '11'
-  description: Using Vehicles after flood
+  title: Using Vehicles after flood
   languages:
       malayalam:
         pdf: https://drive.google.com/open?id=17Myz3IS1pWLQqt71_o_M65wDD2kxe2l2
@@ -263,7 +262,7 @@
         png:
         - https://drive.google.com/file/d/1q_MCdp30PfembRasy2ZLOXovmNyxt9lf/view?usp=sharing
 - id: '12'
-  description: Mental Health
+  title: Mental Health
   languages:
       tamil:
         pdf: https://drive.google.com/open?id=1gbak9EoSKWB43QoO65dnxUMOQ3fSnMEw
@@ -273,7 +272,7 @@
         pdf: https://drive.google.com/open?id=1azH_wVSqP8XIjqZqSpcqkQvGN44J6jSK
         png: []
 - id: '17.3'
-  description: Snake Bite Prevention
+  title: Snake Bite Prevention
   languages:
       malayalam:
         pdf: https://drive.google.com/open?id=1Gbjx7qh3kdEZcrcmaK9rD_H03rZrIb-Z
@@ -292,39 +291,38 @@
         png:
         - https://drive.google.com/file/d/1zQVXvuKm2wuQWk4PMlv3adPAi6sICcTI/view?usp=sharing
 - id: '14'
-  description: Snake Bite care
+  title: Snake Bite care
   languages:
       english:
         pdf: https://drive.google.com/open?id=1tWN9ZxkgaQL86ydOC9rz3vVKzQ8tTche
         png:
         - https://drive.google.com/open?id=1n-vYFUTkDwKGy188lq1_cS4edD6OGlVH
 - id: '15'
-  description: Electrical Safety
+  title: Electrical Safety
   languages:
       malayalam:
         pdf: https://drive.google.com/open?id=1DqntwCevFu98ZnQFRXZ2qpN_RvaVC_ga
         png:
         - https://drive.google.com/open?id=1noyyOY_ky7ZjJyR_kLRuUlEcKwADnIVx
       english:
-        pdf:
         png:
         - https://drive.google.com/file/d/1lyO_asrZGKGm5ta-0ogELU-T9md3XJvl/view
 - id: '16'
-  description: Malaria Prevention
+  title: Malaria Prevention
 - id: '17.1'
-  description: Snake Removal
+  title: Snake Removal
 - id: '17.6'
-  description: Snake Identification
+  title: Snake Identification
 - id: '19'
-  description: E-Waste Collection centers
+  title: E-Waste Collection centers
 - id: '20'
-  description: Child Trafficking Awareness
+  title: Child Trafficking Awareness
 - id: '21'
-  description: Cleaning product labels.
+  title: Cleaning product labels.
 - id: '22'
-  description: Inorganic waste disposal
+  title: Inorganic waste disposal
 - id: '23'
-  description: How to Know if Someone is in Distress
+  title: How to Know if Someone is in Distress
   languages:
       malayalam:
         pdf: https://drive.google.com/open?id=1fTyjoVCbU3YaBgKZT5ivxSL1aqhJkSKx
@@ -339,17 +337,17 @@
         png:
         - https://drive.google.com/open?id=11xssd3dHKzZcME7XTGvix6Xfia8_KQ3s
 - id: '24'
-  description: Typhoid Symptoms
+  title: Typhoid Symptoms
 - id: '25'
-  description: How to Manage Non-Bio-Degradable waste after Floods
+  title: How to Manage Non-Bio-Degradable waste after Floods
 - id: '26'
-  description: Classification of Solid Waste
+  title: Classification of Solid Waste
 - id: '17.2'
-  description: Snake bite prevention Indoor
+  title: Snake bite prevention Indoor
   languages:
       english:
         pdf: https://drive.google.com/open?id=1Mga6UswWtQ-XtXrjbh6s4vCGt3WBZS5z
         png:
         - https://drive.google.com/open?id=1AjDvlFImePPnxJI09c-cdTVmdzo2Pubx
 - id: '17.5'
-  description: Helpline numbers for snake rescuers and helpline
+  title: Helpline numbers for snake rescuers and helpline
