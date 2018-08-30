@@ -107,7 +107,9 @@ export default {
       return documents
     },
     other_languages () {
-      return Object.keys(this.document.languages)
+      return Object.keys(this.document.languages).filter((lang) => {
+        return lang !== this.$route.params.language
+      })
     }
   }
 }
