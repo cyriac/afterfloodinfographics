@@ -145,7 +145,9 @@ export default {
   background: #fff;
   border-top: 1px solid #ddd;
   padding: 15px 12px;
-
+  &:last-child {
+    border-radius: 0 !important;
+  }
   .share-info{
     font-size: 0.9em;
     color: #999;
