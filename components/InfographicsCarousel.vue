@@ -5,7 +5,7 @@
       indicators
       :interval="0"
       v-model="slide"
-      v-if="images.length > 0">
+      v-if="images.length > 1">
         <b-carousel-slide v-for="(png, index) in images"
                           :key="index"
                           :img-src="getimgurl(png)" />
