@@ -3,7 +3,7 @@
     <div class="animated fadeIn">
       <b-breadcrumb :items="breadcrumb_items"/>
       <b-row class="image-outer-container" v-if="document">
-  	    <b-col cols="12" md="8">
+  	    <b-col cols="12" md="8" v-if="hero_img">
           <no-ssr>
             <div>
               <div v-for="(png, index) in document.languages[$route.params.language].png"
@@ -55,9 +55,9 @@ export default {
     return {
       title: this.document.title || "",
       meta: [
-        { name: "image", content: this.document.languages[this.$route.params.language].png[0] },
-        { itemprop: "image", content: this.document.languages[this.$route.params.language].png[0] },
-        { property: "og:image", content: this.document.languages[this.$route.params.language].png[0] },
+        { name: "image", content: this.hero_img },
+        { itemprop: "image", content: this.hero_img },
+        { property: "og:image", content: this.hero_img },
         { property: "og:type", content: "website" },
         { property: "og:title", content: this.document.title || "" },
         { property: "og:description", content: "After Flood Infographics on " + (this.document.title || "") },
@@ -72,6 +72,14 @@ export default {
     }
   },
   computed: {
+    hero_img () {
+      try {
+        return this.document.languages[this.$route.params.language].png[0]
+      } catch(err) {
+        return null
+      }
+
+    },
     breadcrumb_items () {
       let items = [{
           text: 'Home',
