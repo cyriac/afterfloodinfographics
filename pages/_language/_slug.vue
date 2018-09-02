@@ -138,6 +138,8 @@ export default {
 	text-align:center;
 	color: #fff !important;
 	font-weight: 600;
+  margin: 0px !important;
+  filter: grayscale(0) !important;
 	text-decoration: none;
 	&:hover, &:visited, &:focus{
 		color: #fff !important;
@@ -160,5 +162,8 @@ export default {
 }
 .mb-30{
 	margin-bottom: 30px !important;
+}
+.single-featured-image{
+  filter: grayscale(0) !important;
 }
 </style>

@@ -121,7 +121,7 @@ export default {
   .card-title {
     display: none !important;
   }
-  .card-body {
+  .card-body{
     padding: 0px;
   }
   .card-image-full {

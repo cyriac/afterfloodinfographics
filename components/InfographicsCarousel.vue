@@ -10,7 +10,7 @@
                           :key="index"
                           :img-src="getimgurl(png)" />
     </b-carousel>
-    <b-img :src="getimgurl(images[0])" class="full-width-image" v-else/>
+    <b-img :src="getimgurl(images[0])" class="full-width-image single-featured-image" v-else/>
   </div>
 </template>
 
@@ -34,6 +34,15 @@ export default {
 </script>
 
 <style lang="scss">
+  .single-featured-image{
+    max-width: 100%;
+    margin-bottom: 30px;
+    filter: grayscale(100%);
+    border: none !important;
+    &:hover{
+      filter: grayscale(0);
+    }
+  }
   .carousel-inner img{
     filter: grayscale(100%);
     border-radius: 0px;
