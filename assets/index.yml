@@ -1,337 +1,316 @@
----
 - id: '1'
+  languages:
+    bangla:
+      pdf: https://drive.google.com/file/d/1t4n-QBvAkkBcdJVfCfevX3m2BT-3Mb5t/view
+      png:
+      - https://drive.google.com/open?id=1WYMPai_-1W3LAQ82RIrHbnEW-6xxJVaP
+    english:
+      pdf: https://drive.google.com/open?id=1l8nxN2FCG5sffd1_ptUQh1XEFKZMBbqL
+      png:
+      - https://drive.google.com/open?id=1phBQF4tTY5Qyuaesm06mTXNcfuRWn3ai
+    hindi:
+      pdf: https://drive.google.com/open?id=1jO_RmUQ52-7KBf5CMaHosfIK_1rCp0Jj
+      png:
+      - https://drive.google.com/open?id=1XM_8cGGJjJik7UhAKHknADfYa349jZj3
+    kannada:
+      png:
+      - https://drive.google.com/open?id=1ycM-GG9QcmczIYoH1ZdD0jVfEEdUIISg
+    malayalam:
+      pdf: https://drive.google.com/open?id=1PakGwPYQP3o76xndKiQoEoYWMHKNwZqE
+      png:
+      - https://drive.google.com/open?id=1r00MGsHx8zBlw8a299qp09CuDDl7ziUz
+    tamil:
+      pdf: https://drive.google.com/open?id=1ul5wrBMvOn8Ko-UUbNNilU_E8532uxM2
+      png:
+      - https://drive.google.com/open?id=1e89Qnxjl4FMDKtiQOOnMxCnmpOnf9BMR
   title: Water Purification
-  languages:
-      english:
-        pdf: https://drive.google.com/open?id=1l8nxN2FCG5sffd1_ptUQh1XEFKZMBbqL
-        png:
-        - https://drive.google.com/open?id=1phBQF4tTY5Qyuaesm06mTXNcfuRWn3ai
-      malayalam:
-        pdf: https://drive.google.com/open?id=1PakGwPYQP3o76xndKiQoEoYWMHKNwZqE
-        png:
-        - https://drive.google.com/open?id=1r00MGsHx8zBlw8a299qp09CuDDl7ziUz
-      tamil:
-        pdf: https://drive.google.com/open?id=1ul5wrBMvOn8Ko-UUbNNilU_E8532uxM2
-        png:
-        - https://drive.google.com/open?id=1e89Qnxjl4FMDKtiQOOnMxCnmpOnf9BMR
-      hindi:
-        pdf: https://drive.google.com/open?id=1jO_RmUQ52-7KBf5CMaHosfIK_1rCp0Jj
-        png:
-        - https://drive.google.com/open?id=1XM_8cGGJjJik7UhAKHknADfYa349jZj3
-      bangla:
-        pdf: https://drive.google.com/file/d/1t4n-QBvAkkBcdJVfCfevX3m2BT-3Mb5t/view
-        png:
-        - https://drive.google.com/file/d/1WYMPai_-1W3LAQ82RIrHbnEW-6xxJVaP/view?usp=sharing
-      kannada:
-        png:
-        - https://drive.google.com/open?id=1ycM-GG9QcmczIYoH1ZdD0jVfEEdUIISg
 - id: '3.1'
+  languages:
+    bangla:
+      pdf: https://drive.google.com/file/d/1CBQ6dtxR1KRwlX4RpPAPIiHVx0DaEdsw/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=1Ks9nttp4C5yYWWXDP0ulI0mHFsXkUC5k
+    english:
+      pdf: https://drive.google.com/open?id=1pKBExS69KNRWPEQmCyK2BIwOZfkhoFH9
+      png:
+      - https://drive.google.com/open?id=1S4sRXcZfdI89WFShZgDf-dI-ZRqC8SyW
+    hindi:
+      pdf: https://drive.google.com/file/d/1BzLFN5Q-jcPmFLbDgrZLfmDcvj_iPG5E/view
+      png:
+      - https://drive.google.com/open?id=16i0ama0gHeqxsXhRsrPdaVE8VDeRTMbr
+    malayalam:
+      pdf: https://drive.google.com/file/d/1N6m6IWw8-WNK3zuycHRT4bjAt4Q5-U8x/view
+      png:
+      - https://drive.google.com/open?id=1s24JGG6mRvBeNC4pO91OhpS_KJmlEmiv
+    tamil:
+      pdf: https://drive.google.com/file/d/1-nvxDWMXyPq4nMYvVXvK0AZeevyX8dtK/view
+      png:
+      - https://drive.google.com/open?id=1z1Wkzb5HgFToFkbzjxQxZCSZVCj7SJPt
   title: Unplug Appliances
-  languages:
-      malayalam:
-        pdf: https://drive.google.com/file/d/1N6m6IWw8-WNK3zuycHRT4bjAt4Q5-U8x/view
-        png:
-        - https://drive.google.com/file/d/1s24JGG6mRvBeNC4pO91OhpS_KJmlEmiv/view
-      english:
-        pdf: https://drive.google.com/open?id=1pKBExS69KNRWPEQmCyK2BIwOZfkhoFH9
-        png:
-        - https://drive.google.com/open?id=1S4sRXcZfdI89WFShZgDf-dI-ZRqC8SyW
-      tamil:
-        pdf: https://drive.google.com/file/d/1-nvxDWMXyPq4nMYvVXvK0AZeevyX8dtK/view
-        png:
-        - https://drive.google.com/file/d/1z1Wkzb5HgFToFkbzjxQxZCSZVCj7SJPt/view
-      hindi:
-        pdf: https://drive.google.com/file/d/1BzLFN5Q-jcPmFLbDgrZLfmDcvj_iPG5E/view
-        png:
-        - https://drive.google.com/file/d/16i0ama0gHeqxsXhRsrPdaVE8VDeRTMbr/view
-      bangla:
-        pdf: https://drive.google.com/file/d/1CBQ6dtxR1KRwlX4RpPAPIiHVx0DaEdsw/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/1Ks9nttp4C5yYWWXDP0ulI0mHFsXkUC5k/view?usp=sharing
 - id: '3.2'
+  languages:
+    english:
+      pdf: https://drive.google.com/open?id=1qVT0lU_sad_4xIH1VQtLBL-vh8-xpGMR
+      png:
+      - https://drive.google.com/open?id=1Tw9JBn3MtjgkVPgtAX8-CyQd8yaXaoMs
+    hindi:
+      pdf: https://drive.google.com/file/d/1Bz6B4D08ELZkGpAe-0YnIFLgAvKIx3F8/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=1U6eFJ5mtXIxEk52AJiixgI-mDHTM7zFw
+    malayalam:
+      pdf: https://drive.google.com/file/d/1feKcfFMfV0_JeDCEQBYI4q5-ne5Nb8nf/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=1HmACUsuf_DMVgIQjuW815ib20NU5FkgB
+    tamil:
+      pdf: https://drive.google.com/file/d/1iRiLvnojEODMtaTtdczdSf1uAQoeD-GR/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=1stVIuCxMMVtOkT5Na0Dqd_8fWaQEdzNz
   title: Dengue Prevention Tips
-  languages:
-      malayalam:
-        pdf: https://drive.google.com/file/d/1feKcfFMfV0_JeDCEQBYI4q5-ne5Nb8nf/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/1HmACUsuf_DMVgIQjuW815ib20NU5FkgB/view?usp=sharing
-      tamil:
-        pdf: https://drive.google.com/file/d/1iRiLvnojEODMtaTtdczdSf1uAQoeD-GR/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/1stVIuCxMMVtOkT5Na0Dqd_8fWaQEdzNz/view?usp=sharing
-      hindi:
-        pdf: https://drive.google.com/file/d/1Bz6B4D08ELZkGpAe-0YnIFLgAvKIx3F8/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/1U6eFJ5mtXIxEk52AJiixgI-mDHTM7zFw/view?usp=sharing
-      english:
-        pdf: https://drive.google.com/open?id=1qVT0lU_sad_4xIH1VQtLBL-vh8-xpGMR
-        png:
-        - https://drive.google.com/file/d/1Tw9JBn3MtjgkVPgtAX8-CyQd8yaXaoMs/view?usp=sharing
 - id: '3.3'
+  languages:
+    bangla:
+      pdf: https://drive.google.com/file/d/1C_vbRZgS5KgZo38z3SJX3rYLdJRdw1jB/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=11NO3Y7O92x2CfZTKxAtuqlq8oCtkFRTK
+    english:
+      pdf: https://drive.google.com/file/d/19OTD4MwRswTgM7QY7Y6VoalHILJVxuau/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=1fLtGruOlVHL8TqjefNeeSVsxBrAEaulP
+    hindi:
+      pdf: https://drive.google.com/file/d/1NU8UodFxxJyJp9yxtvZN3uiNZbgGI5UB/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=15-9G6_1C5kLGlRLdT4eOzXUQfPqBPWdX
+    malayalam:
+      pdf: https://drive.google.com/file/d/1XCPKH3yAP_x5sEhwyqnbOeWreJblK82X/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=11zpIHxgScWGy9s8CW8bKPwgQ5BPu8jkE
+    tamil:
+      pdf: https://drive.google.com/file/d/1FWa0l2bWuxk1mjbW60AyzsR6PqzgOxEJ/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=1mU4yTpjne8N4p7Jr7EPLbUncpNwbYjr3
   title: Dont go with kids
-  languages:
-      malayalam:
-        pdf: https://drive.google.com/file/d/1XCPKH3yAP_x5sEhwyqnbOeWreJblK82X/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/11zpIHxgScWGy9s8CW8bKPwgQ5BPu8jkE/view?usp=sharing
-      english:
-        pdf: https://drive.google.com/file/d/19OTD4MwRswTgM7QY7Y6VoalHILJVxuau/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/1fLtGruOlVHL8TqjefNeeSVsxBrAEaulP/view?usp=sharing
-      tamil:
-        pdf: https://drive.google.com/file/d/1FWa0l2bWuxk1mjbW60AyzsR6PqzgOxEJ/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/1mU4yTpjne8N4p7Jr7EPLbUncpNwbYjr3/view?usp=sharing
-      hindi:
-        pdf: https://drive.google.com/file/d/1NU8UodFxxJyJp9yxtvZN3uiNZbgGI5UB/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/15-9G6_1C5kLGlRLdT4eOzXUQfPqBPWdX/view?usp=sharing
-      bangla:
-        pdf: https://drive.google.com/file/d/1C_vbRZgS5KgZo38z3SJX3rYLdJRdw1jB/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/11NO3Y7O92x2CfZTKxAtuqlq8oCtkFRTK/view?usp=sharing
 - id: '3.4'
+  languages:
+    bangla:
+      pdf: https://drive.google.com/file/d/19pmZf1JRBLsrpdv129iE9vIHmOKCFkM4/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=1gAardHsK0ymuGKjcGbBbcylq-54HMamb
+    english:
+      pdf: https://drive.google.com/file/d/1Igqr0xFp0gbbE06r0Ib2YvX-rekicbtG/view
+      png:
+      - https://drive.google.com/open?id=1t15h8MJvOfvcnAHPufSbp8hTAKwUvuNp
+    hindi:
+      pdf: https://drive.google.com/file/d/1_4kgfUvmZZvsC7HrAKG8gas7DTQLVxlD/view
+      png:
+      - https://drive.google.com/open?id=1WUqRtDb2_qwhLz2OLweITPsrgnYQybNw
+    malayalam:
+      pdf: https://drive.google.com/file/d/1BtobpXq4KZkFhgO0J4b7tq8F-YI-lo_K/view
+      png:
+      - https://drive.google.com/open?id=19uyJmB-TJ6tArqxNBDXZKCPMi1PjScW1
+    tamil:
+      pdf: https://drive.google.com/file/d/1tSuDyd1AGL_14sFlM_qNf1sqn73C2knH/view
+      png:
+      - https://drive.google.com/open?id=1WeuLQ2tMZ3HfNhe0Irr0BBDXp56SUe63
   title: Dead bodies
-  languages:
-      malayalam:
-        pdf: https://drive.google.com/file/d/1BtobpXq4KZkFhgO0J4b7tq8F-YI-lo_K/view
-        png:
-        - https://drive.google.com/file/d/19uyJmB-TJ6tArqxNBDXZKCPMi1PjScW1/view
-      english:
-        pdf: https://drive.google.com/file/d/1Igqr0xFp0gbbE06r0Ib2YvX-rekicbtG/view
-        png:
-        - https://drive.google.com/file/d/1t15h8MJvOfvcnAHPufSbp8hTAKwUvuNp/view?usp=sharing
-      tamil:
-        pdf: https://drive.google.com/file/d/1tSuDyd1AGL_14sFlM_qNf1sqn73C2knH/view
-        png:
-        - https://drive.google.com/file/d/1WeuLQ2tMZ3HfNhe0Irr0BBDXp56SUe63/view
-      hindi:
-        pdf: https://drive.google.com/file/d/1_4kgfUvmZZvsC7HrAKG8gas7DTQLVxlD/view
-        png:
-        - https://drive.google.com/file/d/1WUqRtDb2_qwhLz2OLweITPsrgnYQybNw/view
-      bangla:
-        pdf: https://drive.google.com/file/d/19pmZf1JRBLsrpdv129iE9vIHmOKCFkM4/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/1gAardHsK0ymuGKjcGbBbcylq-54HMamb/view
 - id: '3.5'
+  languages:
+    bangla:
+      pdf: https://drive.google.com/file/d/1RVelzDfjVpTf0IlG058J3n5l4C6ZB63u/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=12qjb19SKNfG-ZLnpbpjoxL2bihxBec8Y
+    english:
+      pdf: https://drive.google.com/file/d/1qMj3eeW9FVNZpbDUlAOscUTLZ85_kL1G/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=1Qogdaq4cwfSPWR6q_K0nM7nfNFZFvuUn
+    hindi:
+      pdf: https://drive.google.com/file/d/1Wl26SvMIfmQfN3ZOCVpgbTA4daF6PD3l/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=14LYEvrcLEmVwo8PxvNOWd6-fVahNpfQc
+    malayalam:
+      pdf: https://drive.google.com/file/d/1BNn6IjvsYllXOuLRmn8PNEHYLQicvM7Z/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=1xyiq3HltMywYfpuK3jOwyXMtAu3biYNz
+    tamil:
+      pdf: https://drive.google.com/file/d/11Nn2p2SkvzWZmJIhP-IYsmf6ry4NrGHO/view
+      png:
+      - https://drive.google.com/open?id=1KQscUNIG71jFE-9W7ay4ovhP9-EzAv4J
   title: Check Walls and Gates
-  languages:
-      malayalam:
-        pdf: https://drive.google.com/file/d/1BNn6IjvsYllXOuLRmn8PNEHYLQicvM7Z/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/1xyiq3HltMywYfpuK3jOwyXMtAu3biYNz/view
-      english:
-        pdf: https://drive.google.com/file/d/1qMj3eeW9FVNZpbDUlAOscUTLZ85_kL1G/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/1Qogdaq4cwfSPWR6q_K0nM7nfNFZFvuUn/view?usp=sharing
-      tamil:
-        pdf: https://drive.google.com/file/d/11Nn2p2SkvzWZmJIhP-IYsmf6ry4NrGHO/view
-        png:
-        - https://drive.google.com/file/d/1KQscUNIG71jFE-9W7ay4ovhP9-EzAv4J/view
-      hindi:
-        pdf: https://drive.google.com/file/d/1Wl26SvMIfmQfN3ZOCVpgbTA4daF6PD3l/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/14LYEvrcLEmVwo8PxvNOWd6-fVahNpfQc/view?usp=sharing
-      bangla:
-        pdf: https://drive.google.com/file/d/1RVelzDfjVpTf0IlG058J3n5l4C6ZB63u/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/12qjb19SKNfG-ZLnpbpjoxL2bihxBec8Y/view?usp=sharing
 - id: '3.6'
+  languages:
+    bangla:
+      pdf: https://drive.google.com/file/d/1C4Iefp_u5N0eGeWq8cwCG6yIu5dDYUHv/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=13dJZVptdjw5rQMLcD46iBkpXe-RZIPcq
+    english:
+      pdf: https://drive.google.com/file/d/1GHEl8ckOPa5Y8O7RqXr97z_y5jVE2qrd/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=17rZMT71HiVt6BsWQVcJTiaFYPFSqR_Hw
+    hindi:
+      pdf: https://drive.google.com/file/d/1Csi0uur3PrL96CDrf276OW6VOoPxeG1U/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=1kPs0Ajmae5F79BvY2HcmQWtf9ox5udtO
+    malayalam:
+      pdf: https://drive.google.com/file/d/1B_fHLf_NjlCYwSIAnf1okfiG3dgdJTx4/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=1qyYUWKAHq4bOVhviyKY-B9bn9Gej_vD4
+    tamil:
+      pdf: https://drive.google.com/file/d/1YD0K46jFXXdXoFc4uCaJ0WquQpFa91Bn/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=1CnyTJJJDku95q69QlgfOLQLG591HZ2YH
   title: Do Not Enter Home at Night
-  languages:
-      malayalam:
-        pdf: https://drive.google.com/file/d/1B_fHLf_NjlCYwSIAnf1okfiG3dgdJTx4/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/1qyYUWKAHq4bOVhviyKY-B9bn9Gej_vD4/view?usp=sharing
-      english:
-        pdf: https://drive.google.com/file/d/1GHEl8ckOPa5Y8O7RqXr97z_y5jVE2qrd/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/17rZMT71HiVt6BsWQVcJTiaFYPFSqR_Hw/view?usp=sharing
-      tamil:
-        pdf: https://drive.google.com/file/d/1YD0K46jFXXdXoFc4uCaJ0WquQpFa91Bn/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/1CnyTJJJDku95q69QlgfOLQLG591HZ2YH/view?usp=sharing
-      hindi:
-        pdf: https://drive.google.com/file/d/1Csi0uur3PrL96CDrf276OW6VOoPxeG1U/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/1kPs0Ajmae5F79BvY2HcmQWtf9ox5udtO/view?usp=sharing
-      bangla:
-        pdf: https://drive.google.com/file/d/1C4Iefp_u5N0eGeWq8cwCG6yIu5dDYUHv/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/13dJZVptdjw5rQMLcD46iBkpXe-RZIPcq/view?usp=sharing
 - id: '3.7'
+  languages:
+    bangla:
+      pdf: https://drive.google.com/file/d/1VFFzNAf0vRCD3tZDSYgSn6OTlK2twJ76/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=1ptoQzCbetQor3t6xdFw5lZQKPvVO6cwt
+    english:
+      pdf: https://drive.google.com/file/d/1PWiR8ugWZDgasiuyYQRuy8LXyDJHuJds/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=1wYVwVPd8kBUtuW8HOYuxhdHfllwISRy0
+    hindi:
+      pdf: https://drive.google.com/file/d/1i6VOGUaAdnHJ289Oh_cFaAH2cKQk4ixp/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=1shz8xYCSkmkW9eOWyGSMunvGiIxW17qe
+    malayalam:
+      pdf: https://drive.google.com/file/d/122aXRcPGFArU9mcT0SdQBcypJ9wZXZ1X/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=1yVWG_DkIkZ7tE3IA5ptq0oq8d36z_T-T
+    tamil:
+      pdf: https://drive.google.com/file/d/108ei9TGDuVEZmVtJa1aFETVlanT_7a5-/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=1bwztzoSKpHufuH6RuS7pHqngziDen-HM
   title: Checking house before entering
-  languages:
-      malayalam:
-        pdf: https://drive.google.com/file/d/122aXRcPGFArU9mcT0SdQBcypJ9wZXZ1X/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/1yVWG_DkIkZ7tE3IA5ptq0oq8d36z_T-T/view?usp=sharing
-      english:
-        pdf: https://drive.google.com/file/d/1PWiR8ugWZDgasiuyYQRuy8LXyDJHuJds/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/1wYVwVPd8kBUtuW8HOYuxhdHfllwISRy0/view?usp=sharing
-      tamil:
-        pdf: https://drive.google.com/file/d/108ei9TGDuVEZmVtJa1aFETVlanT_7a5-/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/1bwztzoSKpHufuH6RuS7pHqngziDen-HM/view?usp=sharing
-      hindi:
-        pdf: https://drive.google.com/file/d/1i6VOGUaAdnHJ289Oh_cFaAH2cKQk4ixp/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/1shz8xYCSkmkW9eOWyGSMunvGiIxW17qe/view?usp=sharing
-      bangla:
-        pdf: https://drive.google.com/file/d/1VFFzNAf0vRCD3tZDSYgSn6OTlK2twJ76/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/1ptoQzCbetQor3t6xdFw5lZQKPvVO6cwt/view?usp=sharing
 - id: '3.8'
+  languages:
+    bangla:
+      pdf: https://drive.google.com/file/d/1_3H29OhR9cRQ4YQ1SksK1DFKVBHcaqai/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=1ITIUiSsyArSAW7mEENVjR6q7m4WH4HJ3
+    english:
+      pdf: https://drive.google.com/file/d/1Ib69lvmzGd8uCOxF2Qj1TtcJBuunqPfF/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=1hwW7luim0EjFYYP9KNzQkPJ2YwlHCM39
+    hindi:
+      pdf: https://drive.google.com/file/d/1WJUGfNF2TcKYGLwrHYkFWQsP8vlsdKj2/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=1IkObOCPuYoaWEXakbL6lwx9binNxEpbN
+    malayalam:
+      pdf: https://drive.google.com/file/d/17UNkja-gC0iDJNTZRpYbnyCNS4OOsO5U/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=1kLoFjQvTVcuyP8mVXYib4-XTA5gsdzZF
+    tamil:
+      pdf: https://drive.google.com/file/d/18QKIwLVz9UQH-FbxWKuQdFwLfQaVqhIJ/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=1pF8-Pdy1iTGUzBkgjqbSRgGn8s5_xFkG
   title: Before entering Flooded home
-  languages:
-      malayalam:
-        pdf: https://drive.google.com/file/d/17UNkja-gC0iDJNTZRpYbnyCNS4OOsO5U/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/1kLoFjQvTVcuyP8mVXYib4-XTA5gsdzZF/view?usp=sharing
-      english:
-        pdf: https://drive.google.com/file/d/1Ib69lvmzGd8uCOxF2Qj1TtcJBuunqPfF/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/1hwW7luim0EjFYYP9KNzQkPJ2YwlHCM39/view?usp=sharing
-      tamil:
-        pdf: https://drive.google.com/file/d/18QKIwLVz9UQH-FbxWKuQdFwLfQaVqhIJ/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/1pF8-Pdy1iTGUzBkgjqbSRgGn8s5_xFkG/view?usp=sharing
-      hindi:
-        pdf: https://drive.google.com/file/d/1WJUGfNF2TcKYGLwrHYkFWQsP8vlsdKj2/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/1IkObOCPuYoaWEXakbL6lwx9binNxEpbN/view?usp=sharing
-      bangla:
-        pdf: https://drive.google.com/file/d/1_3H29OhR9cRQ4YQ1SksK1DFKVBHcaqai/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/1ITIUiSsyArSAW7mEENVjR6q7m4WH4HJ3/view?usp=sharing
 - id: '4'
+  languages:
+    english:
+      pdf: https://drive.google.com/file/d/13-lDywBmvSICFEmUuBdYHRb5qIUd4cz9/view?usp=sharing
+    malayalam:
+      pdf: https://drive.google.com/file/d/1jW826elqLCGSOGd287qcyrbyUzCxS728/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=1wVzx6VX6vZshXRuOkAnC7K83LF2LfWtg
   title: Leptospirosis
-  languages:
-      malayalam:
-        pdf: https://drive.google.com/file/d/1jW826elqLCGSOGd287qcyrbyUzCxS728/view?usp=sharing
-        png:
-        - https://drive.google.com/open?id=1wVzx6VX6vZshXRuOkAnC7K83LF2LfWtg
-        - https://drive.google.com/open?id=124-ym9vwEq4ZgT3TzeUxJjKoke7MR2DK
-      english:
-        pdf: https://drive.google.com/file/d/13-lDywBmvSICFEmUuBdYHRb5qIUd4cz9/view?usp=sharing
-        png:
-        - https://drive.google.com/open?id=12E0ggwnb8iL5j4eckmxdUdUKRDSP0Rrr
-        - https://drive.google.com/open?id=1VTM1hHgqBWFjoiwYDz-RW1DQjkuPYUBr
-      tamil:
-        pdf: https://drive.google.com/open?id=1wLxTkvE-tKmOUmX08GhNMj2uCidJ3vnI
-        png:
-        - https://drive.google.com/open?id=112xVZ88KfUFE2dSfOHnJ9XXV7_zOW8Mq
-        - https://drive.google.com/open?id=15Rp2nxNgXHsFsMvosPgTskzlbH28wfK7
 - id: '10'
+  languages:
+    bangla:
+      pdf: https://drive.google.com/open?id=1pNWSMkaE0CIEJ8jmv-SrXfNqcsja42R3
+      png:
+      - https://drive.google.com/open?id=1SRBE6SsvSUvvlMuQaKPuonJO_egh6v0S
+    english:
+      pdf: https://drive.google.com/open?id=1SCmrPCmlTNBP9bqc-MYx0oOcLQ_cbgYR
+      png:
+      - https://drive.google.com/open?id=1v_3dbyfBcXc8OYbE23013q3ym1jjl4Bj
+    hindi:
+      pdf: https://drive.google.com/file/d/1n-jQmC1y7lXTvml2gtgG9d7wQLP2CrcW/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=1NR-QkDgH7u5r07Xshf7T1NtLTF7sVpZh
+    malayalam:
+      pdf: https://drive.google.com/open?id=1fB5JwfUQVthYuEBoKnCmedmItgjEnkMM
+      png:
+      - https://drive.google.com/open?id=1fnI60HdPku7LraTN1Fy3gjCF7w5pCshp
+    tamil:
+      pdf: https://drive.google.com/open?id=1WYwl8_tKHPTv8ess4kv6_Nj74ef3ZbBf
+      png:
+      - https://drive.google.com/open?id=1BE3WlLrpbv-U8QmGiefoH1UB_hTDoLFp
   title: Disposing Animal Corpse
-  languages:
-      malayalam:
-        pdf: https://drive.google.com/open?id=1fB5JwfUQVthYuEBoKnCmedmItgjEnkMM
-        png:
-        - https://drive.google.com/open?id=1fnI60HdPku7LraTN1Fy3gjCF7w5pCshp
-      english:
-        pdf: https://drive.google.com/open?id=1SCmrPCmlTNBP9bqc-MYx0oOcLQ_cbgYR
-        png:
-        - https://drive.google.com/open?id=1v_3dbyfBcXc8OYbE23013q3ym1jjl4Bj
-      tamil:
-        pdf: https://drive.google.com/open?id=1WYwl8_tKHPTv8ess4kv6_Nj74ef3ZbBf
-        png:
-        - https://drive.google.com/open?id=1BE3WlLrpbv-U8QmGiefoH1UB_hTDoLFp
-      hindi:
-        pdf: https://drive.google.com/file/d/1n-jQmC1y7lXTvml2gtgG9d7wQLP2CrcW/view?usp=sharing
-        png:
-        - https://drive.google.com/open?id=1NR-QkDgH7u5r07Xshf7T1NtLTF7sVpZh
-      bangla:
-        pdf: https://drive.google.com/open?id=1pNWSMkaE0CIEJ8jmv-SrXfNqcsja42R3
-        png:
-        - https://drive.google.com/open?id=1SRBE6SsvSUvvlMuQaKPuonJO_egh6v0S
 - id: '11'
+  languages:
+    bangla:
+      pdf: https://drive.google.com/file/d/1jCJUnEaeqhz1ZPpw5pylwvD4WG1SrVcO/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=1q_MCdp30PfembRasy2ZLOXovmNyxt9lf
+    english:
+      pdf: https://drive.google.com/file/d/1kIkr7mwQszMSbJU_DQIrkZDDWBsmb4CC/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=1Cy4j6OeaGf2oAZbgkDSxP6yHd2gGGC_U
+    hindi:
+      pdf: https://drive.google.com/file/d/1PdpCUAyzMxKFUtOPKx616bD-T3YNzhvi/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=1QUIpUr72dRNdnz5RGeyKLuRuaP2k7UDo
+    malayalam:
+      pdf: https://drive.google.com/open?id=17Myz3IS1pWLQqt71_o_M65wDD2kxe2l2
+      png:
+      - https://drive.google.com/open?id=1CckCwZ4XS8WTVC2ayi3nCfPD6MW7hx-1
+    tamil:
+      pdf: https://drive.google.com/open?id=1X1BQMEWedilzeDgSDtURbZWIhrt8NDvH
+      png:
+      - https://drive.google.com/open?id=1fI8XUD9fLVnLrPp0HmKxYPxKztAPLSyl
   title: Using Vehicles after flood
-  languages:
-      malayalam:
-        pdf: https://drive.google.com/open?id=17Myz3IS1pWLQqt71_o_M65wDD2kxe2l2
-        png:
-        - https://drive.google.com/file/d/1CckCwZ4XS8WTVC2ayi3nCfPD6MW7hx-1/view?usp=sharing
-      english:
-        pdf: https://drive.google.com/file/d/1kIkr7mwQszMSbJU_DQIrkZDDWBsmb4CC/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/1Cy4j6OeaGf2oAZbgkDSxP6yHd2gGGC_U/view?usp=sharing
-      tamil:
-        pdf: https://drive.google.com/open?id=1X1BQMEWedilzeDgSDtURbZWIhrt8NDvH
-        png:
-        - https://drive.google.com/open?id=1fI8XUD9fLVnLrPp0HmKxYPxKztAPLSyl
-      hindi:
-        pdf: https://drive.google.com/file/d/1PdpCUAyzMxKFUtOPKx616bD-T3YNzhvi/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/1QUIpUr72dRNdnz5RGeyKLuRuaP2k7UDo/view?usp=sharing
-      bangla:
-        pdf: https://drive.google.com/file/d/1jCJUnEaeqhz1ZPpw5pylwvD4WG1SrVcO/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/1q_MCdp30PfembRasy2ZLOXovmNyxt9lf/view?usp=sharing
 - id: '12'
+  languages:
+    english:
+      pdf: https://drive.google.com/open?id=1azH_wVSqP8XIjqZqSpcqkQvGN44J6jSK
+    tamil:
+      pdf: https://drive.google.com/open?id=1gbak9EoSKWB43QoO65dnxUMOQ3fSnMEw
+      png:
+      - https://drive.google.com/open?id=1mZkbJnSCrXJEvhzfFDH_R6PXKh0-ww38
+      - https://drive.google.com/open?id=15_7rSaTyr69PYTA0C3Vk7U_yaULzoQgX
+      - https://drive.google.com/open?id=1jBUVGhDiYggC_bzMj_bDii2-Z47Bw3b3
   title: Mental Health
-  languages:
-      malayalam:
-        pdf: https://drive.google.com/open?id=1RxI5zTW_i8-zq6qM8a3cwuOsOr9qa5t4
-        png:
-        - https://drive.google.com/open?id=1BRSXinojLKEzXk2mEwlATmPVR-ldpLJ3
-        - https://drive.google.com/open?id=12jalwlf6HmWkTEAwMFMRvVY-t-LpX3iQ
-        - https://drive.google.com/open?id=1boCJsBthj4CjDVyrMarOzUHBYDKiRwPb
-        - https://drive.google.com/open?id=131KWIBNyh1zZH1gAA2kuWP5Walfef8il
-      tamil:
-        pdf: https://drive.google.com/open?id=1gbak9EoSKWB43QoO65dnxUMOQ3fSnMEw
-        png:
-        - https://drive.google.com/open?id=1jBUVGhDiYggC_bzMj_bDii2-Z47Bw3b3
-        - https://drive.google.com/open?id=15_7rSaTyr69PYTA0C3Vk7U_yaULzoQgX
-        - https://drive.google.com/open?id=1mZkbJnSCrXJEvhzfFDH_R6PXKh0-ww38
-      english:
-        pdf: https://drive.google.com/open?id=1azH_wVSqP8XIjqZqSpcqkQvGN44J6jSK
-        png:
-        - https://drive.google.com/open?id=14lUF_RaCFxXrVKO5-upw6tDQckW661Vk
-        - https://drive.google.com/open?id=1r7uhfJTk2QZG_xb9rrPIOjcGJF17_sAn
-        - https://drive.google.com/open?id=1X5H7kh9PGLUmVG4Ttq-2BR9qRUiZFEp-
-      hindi:
-        png:
-        - https://drive.google.com/open?id=1MPRmnSFRTnotOqbr3vQeAmcIXc02VwGm
-        - https://drive.google.com/open?id=1cNuaMVIdQN4mgTbP53pNbvqNgfkuLt-0
-        - https://drive.google.com/open?id=13HjUVAgovidhD8oyaUZQX0sRosUmUe1D
 - id: '17.3'
+  languages:
+    bangla:
+      pdf: https://drive.google.com/file/d/1JcqGvkop6AkYubTE8YTWhZNdTrOjfOXa/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=1zQVXvuKm2wuQWk4PMlv3adPAi6sICcTI
+    english:
+      pdf: https://drive.google.com/open?id=1sxRKS-ESrO8YDWRTdxc5pU70ATDfr7ht
+      png:
+      - https://drive.google.com/open?id=1vBReURquAv7vR7QjofHuONEpKe_56Ztj
+    hindi:
+      pdf: https://drive.google.com/file/d/1nQddAhni3gmQ-lFq3XcdAJE_GqChqfTI/view?usp=sharing
+      png:
+      - https://drive.google.com/open?id=11ZABJozazkNih4vwRLH3tBRm-yDHAlGF
+    malayalam:
+      pdf: https://drive.google.com/open?id=1Gbjx7qh3kdEZcrcmaK9rD_H03rZrIb-Z
+      png:
+      - https://drive.google.com/open?id=1b0tpA47NviVty9aUvoURFz51-fY__ur6
   title: Snake Bite Prevention
-  languages:
-      malayalam:
-        pdf: https://drive.google.com/open?id=1Gbjx7qh3kdEZcrcmaK9rD_H03rZrIb-Z
-        png:
-        - https://drive.google.com/open?id=1b0tpA47NviVty9aUvoURFz51-fY__ur6
-      english:
-        pdf: https://drive.google.com/open?id=1sxRKS-ESrO8YDWRTdxc5pU70ATDfr7ht
-        png:
-        - https://drive.google.com/open?id=1vBReURquAv7vR7QjofHuONEpKe_56Ztj
-      hindi:
-        pdf: https://drive.google.com/file/d/1nQddAhni3gmQ-lFq3XcdAJE_GqChqfTI/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/11ZABJozazkNih4vwRLH3tBRm-yDHAlGF/view?usp=sharing
-      bangla:
-        pdf: https://drive.google.com/file/d/1JcqGvkop6AkYubTE8YTWhZNdTrOjfOXa/view?usp=sharing
-        png:
-        - https://drive.google.com/file/d/1zQVXvuKm2wuQWk4PMlv3adPAi6sICcTI/view?usp=sharing
 - id: '14'
+  languages:
+    english:
+      pdf: https://drive.google.com/open?id=138yg_tP5qVpYDy5npS7GQR4sQT5Qw7pj
+      png:
+      - https://drive.google.com/open?id=19-XjnlxDRtR_BRVUC8ED1BNA2aZt_ejr
+    malayalam:
+      pdf: https://drive.google.com/open?id=1o3S4lYN84wYDSkzy1dH9JDQQe6KGbazp
+      png:
+      - https://drive.google.com/open?id=1riDoCKhfclTf9D4UT5oBsOVoXNt1h8mn
   title: Snake Bite care
-  languages:
-      english:
-        pdf: https://drive.google.com/open?id=1tWN9ZxkgaQL86ydOC9rz3vVKzQ8tTche
-        png:
-        - https://drive.google.com/open?id=1n-vYFUTkDwKGy188lq1_cS4edD6OGlVH
 - id: '15'
-  title: Electrical Safety
   languages:
-      malayalam:
-        pdf: https://drive.google.com/open?id=1DqntwCevFu98ZnQFRXZ2qpN_RvaVC_ga
-        png:
-        - https://drive.google.com/open?id=1noyyOY_ky7ZjJyR_kLRuUlEcKwADnIVx
-      english:
-        png:
-        - https://drive.google.com/file/d/1lyO_asrZGKGm5ta-0ogELU-T9md3XJvl/view
+    english:
+      png:
+      - https://drive.google.com/open?id=1lyO_asrZGKGm5ta-0ogELU-T9md3XJvl
+    malayalam:
+      pdf: https://drive.google.com/open?id=1DqntwCevFu98ZnQFRXZ2qpN_RvaVC_ga
+      png:
+      - https://drive.google.com/open?id=15Pze5Qb0sPAYHiGY9mhYPfdUmAs0WZA0
+      - https://drive.google.com/open?id=1QWGYAFxDh0G_BKNTVtI6cyNL9Vf-IEQE
+  title: Electrical Safety
 - id: '16'
   title: Malaria Prevention
 - id: '17.1'
@@ -347,20 +326,20 @@
 - id: '22'
   title: Inorganic waste disposal
 - id: '23'
-  title: How to Know if Someone is in Distress
   languages:
-      malayalam:
-        pdf: https://drive.google.com/open?id=1fTyjoVCbU3YaBgKZT5ivxSL1aqhJkSKx
-        png:
-        - https://drive.google.com/open?id=1tt9YYfy44qbHK1TvC8VdFq2WPPN1KAQo
-      hindi:
-        pdf: https://drive.google.com/open?id=1OBUjoIxRWMq2bUAU0qHZsNZ0X8i_TNic
-        png:
-        - https://drive.google.com/open?id=1E3XwF8y9CmnQKbAIDyQRovfW_DajqmP7
-      english:
-        pdf: https://drive.google.com/open?id=1J9dAUQdF23Ro7F-2a0tFMWKuW5VlHMDi
-        png:
-        - https://drive.google.com/open?id=11xssd3dHKzZcME7XTGvix6Xfia8_KQ3s
+    english:
+      pdf: https://drive.google.com/open?id=1J9dAUQdF23Ro7F-2a0tFMWKuW5VlHMDi
+      png:
+      - https://drive.google.com/open?id=11xssd3dHKzZcME7XTGvix6Xfia8_KQ3s
+    hindi:
+      pdf: https://drive.google.com/open?id=1OBUjoIxRWMq2bUAU0qHZsNZ0X8i_TNic
+      png:
+      - https://drive.google.com/open?id=1E3XwF8y9CmnQKbAIDyQRovfW_DajqmP7
+    malayalam:
+      pdf: https://drive.google.com/open?id=1fTyjoVCbU3YaBgKZT5ivxSL1aqhJkSKx
+      png:
+      - https://drive.google.com/open?id=1tt9YYfy44qbHK1TvC8VdFq2WPPN1KAQo
+  title: How to Know if Someone is in Distress
 - id: '24'
   title: Typhoid Symptoms
 - id: '25'
@@ -368,11 +347,11 @@
 - id: '26'
   title: Classification of Solid Waste
 - id: '17.2'
-  title: Snake bite prevention Indoor
   languages:
-      english:
-        pdf: https://drive.google.com/open?id=1Mga6UswWtQ-XtXrjbh6s4vCGt3WBZS5z
-        png:
-        - https://drive.google.com/open?id=1AjDvlFImePPnxJI09c-cdTVmdzo2Pubx
+    english:
+      pdf: https://drive.google.com/open?id=1Mga6UswWtQ-XtXrjbh6s4vCGt3WBZS5z
+      png:
+      - https://drive.google.com/open?id=1AjDvlFImePPnxJI09c-cdTVmdzo2Pubx
+  title: Snake bite prevention Indoor
 - id: '17.5'
-  title: Helpline numbers for snake rescuers and helpline
+  title: ' Helpline numbers for snake rescuers and helpline '
