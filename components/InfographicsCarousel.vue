@@ -34,17 +34,20 @@ export default {
 </script>
 
 <style lang="scss">
+  .card-columns {
+   .card .full-width-image, .carousel-item .img-fluid{
+       filter: grayscale(100%);
+       &:hover, &:active, &:focus {
+         filter: grayscale(0);
+       }
+     }
+   }
   .single-featured-image{
     max-width: 100%;
     margin-bottom: 30px;
-    filter: grayscale(100%);
     border: none !important;
-    &:hover{
-      filter: grayscale(0);
-    }
   }
   .carousel-inner img{
-    filter: grayscale(100%);
     border-radius: 0px;
   }
   .carousel-control-prev, .carousel-control-next{
@@ -66,8 +69,6 @@ export default {
     position: absolute;
     content: '';
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-
-
     background-size: 15px 15px;
     height: 15px;
     width: 15px;
