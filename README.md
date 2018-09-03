@@ -1,6 +1,6 @@
-# afterfloodinfographics
+# After flood infographics
 
-> Infographics about flood rehabilitation
+> Concise, reliable and shareable infographics for health, environmental and social awareness during the time of rehabilitation after a natural disaster.
 
 ## Build Setup
 
@@ -20,4 +20,3 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
-

@@ -3,7 +3,7 @@
     <div class="animated fadeIn">
       <b-breadcrumb :items="breadcrumb_items"/>
       <b-row class="image-outer-container" v-if="document">
-  	    <b-col cols="12" md="8">
+  	    <b-col cols="12" md="8" v-if="hero_img">
           <InfographicsCarousel :images="document.languages[$route.params.language].png"
                                 v-if="document.languages !== undefined && document.languages[$route.params.language] !== undefined && document.languages[$route.params.language].png.length > 0"/>
   	    </b-col>
@@ -52,9 +52,9 @@ export default {
     return {
       title: this.document.title || "",
       meta: [
-        { name: "image", content: this.document.languages[this.$route.params.language].png[0] },
-        { itemprop: "image", content: this.document.languages[this.$route.params.language].png[0] },
-        { property: "og:image", content: this.document.languages[this.$route.params.language].png[0] },
+        { name: "image", content: this.hero_img },
+        { itemprop: "image", content: this.hero_img },
+        { property: "og:image", content: this.hero_img },
         { property: "og:type", content: "website" },
         { property: "og:title", content: this.document.title || "" },
         { property: "og:description", content: "After Flood Infographics on " + (this.document.title || "") },
@@ -75,6 +75,14 @@ export default {
     }
   },
   computed: {
+    hero_img () {
+      try {
+        return this.document.languages[this.$route.params.language].png[0]
+      } catch(err) {
+        return null
+      }
+
+    },
     breadcrumb_items () {
       let items = [{
           text: 'Home',
@@ -110,7 +118,9 @@ export default {
       return documents
     },
     other_languages () {
-      return Object.keys(this.document.languages)
+      return Object.keys(this.document.languages).filter((lang) => {
+        return lang !== this.$route.params.language
+      })
     }
   }
 }
@@ -121,7 +131,6 @@ export default {
 	width: 100%;
 	border-radius: 4px;
 	border: 1px solid #ddd;
-	margin-bottom: 50px;
 }
 .section-header{
 	font-size: 2em;
