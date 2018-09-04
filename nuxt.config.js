@@ -99,7 +99,7 @@ module.exports = {
        let objects = await index.get_index()
        let routes = []
 
-       objects.forEach((elem) => {
+       objects.projects.forEach((elem) => {
          if (elem.languages !== undefined && Object.keys(elem.languages).length > 0) {
            let languages = Object.keys(elem.languages)
            languages.forEach((lang) => {

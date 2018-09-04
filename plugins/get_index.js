@@ -9,10 +9,10 @@ function get_index () {
   return axios.get(index_url).then((response) => {
     let index_data = yaml.load(response.data)
 
-    // reformat to old structure till we port the app
-    index_data.forEach((elem, index) => {
+    index_data.projects.forEach((elem, index) => {
       elem['slug'] = elem['title'].trim().toLowerCase().replace(/\s+/g, '-').replace(/[^\w\-]+/g, '').replace(/\-\-+/g, '-').trim()
     })
+
     return index_data
   })
 }
