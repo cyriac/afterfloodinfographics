@@ -45,7 +45,10 @@ module.exports = {
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#FFFFFF' },
+  loading: {
+    color: 'rgba(255, 255, 255, .5)',
+    height: '68px',
+  },
   modules: [
     ['@nuxtjs/google-analytics', {
       id: 'UA-54992966-4'
