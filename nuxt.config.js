@@ -97,7 +97,7 @@ module.exports = {
   generate: {
     routes: async function () {
        let objects = await index.get_index()
-       let routes = []
+       let routes = ['404']
 
        objects.projects.forEach((elem) => {
          if (elem.languages !== undefined && Object.keys(elem.languages).length > 0) {
