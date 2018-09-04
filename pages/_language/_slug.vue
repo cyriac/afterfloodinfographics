@@ -13,8 +13,8 @@
           <div class="section-tags">
             <b-badge v-for="(tag, index) in document.tags" :key="index" variant="dark" :to="'/' + $route.params.language + '/?tag=' + tag">{{ tag }}</b-badge>
           </div>
-          <p class="section-desc" v-if="document.description">
-            {{ document.description }}
+          <p class="section-desc" v-if="description">
+            {{ description }}
           </p>
           <a :href="document.languages[$route.params.language].pdf"
              target="_blank"
@@ -55,7 +55,7 @@ export default {
     InfographicsCarousel
   },
   head () {
-    let description = this.document.description != undefined ? this.document.description : "After Flood Infographics on " + (this.document.title || "")
+    let description = this.description !== null ? this.description : "After Flood Infographics on " + (this.document.title || "")
     return {
       title: this.document.title || "",
       meta: [
@@ -89,6 +89,16 @@ export default {
         return null
       }
 
+    },
+    description () {
+      let description = null
+      if (this.document.description !== undefined && this.document.description !== null) {
+        description = this.document.description
+      }
+      if (this.document.languages[this.$route.params.language].description !== undefined && this.document.languages[this.$route.params.language].description !== null) {
+        description = this.document.languages[this.$route.params.language].description
+      }
+      return description
     },
     breadcrumb_items () {
       let items = [{
