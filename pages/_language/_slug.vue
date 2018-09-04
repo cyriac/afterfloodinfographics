@@ -10,6 +10,12 @@
 
         <b-col cols="12" md="4">
     			<h2 class="section-header">{{ document.title }}</h2>
+          <div class="section-tags">
+            <b-badge v-for="(tag, index) in document.tags" :key="index" variant="dark" :to="'/' + $route.params.language + '/?tag=' + tag">{{ tag }}</b-badge>
+          </div>
+          <p class="section-desc" v-if="document.description">
+            {{ document.description }}
+          </p>
           <a :href="document.languages[$route.params.language].pdf"
              target="_blank"
              v-if="document.languages[$route.params.language].pdf !== undefined">
@@ -49,6 +55,7 @@ export default {
     InfographicsCarousel
   },
   head () {
+    let description = this.document.description != undefined ? this.document.description : "After Flood Infographics on " + (this.document.title || "")
     return {
       title: this.document.title || "",
       meta: [
@@ -57,7 +64,7 @@ export default {
         { property: "og:image", content: this.hero_img },
         { property: "og:type", content: "website" },
         { property: "og:title", content: this.document.title || "" },
-        { property: "og:description", content: "After Flood Infographics on " + (this.document.title || "") },
+        { property: "og:description", content: description },
         { property: "og:image:width", content: "1200" },
         { property: "og:image:height", content: "630" },
       ]
@@ -134,7 +141,12 @@ export default {
 }
 .section-header{
 	font-size: 2em;
-	margin-bottom: 25px;
+}
+.section-tags {
+  margin-bottom: 25px;
+  .badge {
+    margin-right: 5px;
+  }
 }
 .section-desc{
 	font-size: 1.0em;

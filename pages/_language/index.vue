@@ -67,6 +67,11 @@ export default {
       'title': lang
     }
   },
+  mounted () {
+    if (this.$route.query.tag !== undefined && this.search === "") {
+      this.search = this.$route.query.tag
+    }
+  },
   methods:{
     preventDefault: function(e){
       e.preventDefault();
@@ -106,7 +111,18 @@ export default {
         let search_val = this.search.toLowerCase().replace(/\s+/g, '').trim()
         documents = documents.filter((elem) => {
           let search_slug = elem['slug'].replace(/\-/g, '')
-          return search_slug.includes(search_val)
+          let slug_search = search_slug.includes(search_val)
+          let tag_search = false
+          let desc_search = false
+
+          if (elem.tags != undefined) {
+            tag_search = elem.tags.includes(this.search)
+          }
+
+          if (elem.description != undefined) {
+            desc_search = elem.description.toLowerCase().includes(this.search)
+          }
+          return slug_search || tag_search || desc_search
         })
       }
       return documents
