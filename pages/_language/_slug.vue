@@ -56,14 +56,17 @@ export default {
   },
   head () {
     let description = this.description !== null ? this.description : "After Flood Infographics on " + (this.document.title || "")
+    let title = this.document.title || ""
+    let lang = this.$route.params.language.replace(/\w\S*/g, (txt) => { return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();})
+    title = title + " (" + lang + ")"
     return {
-      title: this.document.title || "",
+      title: title,
       meta: [
         { name: "image", content: this.hero_img },
         { itemprop: "image", content: this.hero_img },
         { property: "og:image", content: this.hero_img },
         { property: "og:type", content: "website" },
-        { property: "og:title", content: this.document.title || "" },
+        { property: "og:title", content: title },
         { property: "og:description", content: description },
         { property: "og:image:width", content: "1200" },
         { property: "og:image:height", content: "630" },
