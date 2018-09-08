@@ -1,6 +1,6 @@
 projects:
 - id: '1'
-  keywords:
+  tags:
   - chlorine
   - iodine
   - tablets
@@ -44,7 +44,7 @@ projects:
       - https://drive.google.com/open?id=1e89Qnxjl4FMDKtiQOOnMxCnmpOnf9BMR
   title: Drinking water purification after a flood
 - id: '3.1'
-  keywords:
+  tags:
   - floods
   - flood
   - kerala flood infographics
@@ -89,7 +89,7 @@ projects:
       - https://drive.google.com/open?id=1z1Wkzb5HgFToFkbzjxQxZCSZVCj7SJPt
   title: Using electric appliances after a flood
 - id: '3.2'
-  keywords:
+  tags:
   - floods
   - flood
   - kerala flood infographics
@@ -300,7 +300,7 @@ projects:
       - https://drive.google.com/open?id=1pF8-Pdy1iTGUzBkgjqbSRgGn8s5_xFkG
   title: Safety precautions before entering a flood-affected home
 - id: '4'
-  keywords:
+  tags:
   - Kerala Floods 2018
   - Rehabilitation
   - Infographics
@@ -382,7 +382,7 @@ projects:
       - https://drive.google.com/open?id=1fI8XUD9fLVnLrPp0HmKxYPxKztAPLSyl
   title: Before using vehicles after a flood
 - id: '12'
-  keywords:
+  tags:
   - Post Traumatic Stress
   - PTSD
   - flood victims
