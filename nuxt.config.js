@@ -1,4 +1,24 @@
 const index = require('./plugins/get_index')
+async function routes_for_generate () {
+   let objects = await index.get_index()
+   let routes = []
+
+   objects.projects.forEach((elem) => {
+     if (elem.languages !== undefined && Object.keys(elem.languages).length > 0) {
+       let languages = Object.keys(elem.languages)
+       languages.forEach((lang) => {
+         if (!routes.includes(lang)) {
+           routes.push('/' + lang)
+         }
+         let slug_url = '/' + lang + '/' + elem.slug
+         if (!routes.includes(slug_url)) {
+           routes.push(slug_url)
+         }
+       })
+     }
+   })
+   return routes
+}
 
 module.exports = {
   /*
@@ -19,7 +39,8 @@ module.exports = {
       { name: "og:type", content: "website" },
       { name: "msapplication-TileColor", content: "#ffffff" },
       { name: "msapplication-TileImage", content: "/ms-icon-144x144.png" },
-      { name: "theme-color", content: "#ffffff" }
+      { name: "theme-color", content: "#ffffff" },
+      { name: "google-site-verification", content: "w0QYpHIMRrMjjGDsLMPOLCTpzBQGUNFEFdvzDQCnnMo" }
     ],
     link: [
       { rel:'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -45,18 +66,36 @@ module.exports = {
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#FFFFFF' },
+  loading: {
+    color: 'rgba(255, 255, 255, .5)',
+    height: '68px',
+  },
   modules: [
     ['@nuxtjs/google-analytics', {
       id: 'UA-54992966-4'
     }],
     '@nuxtjs/axios',
+    '@nuxtjs/sitemap',
     ['bootstrap-vue/nuxt', { css: false }],
   ],
   plugins: [
     '~/plugins/filters.js',
     { src: '~/plugins/vue-progressive-image.js', ssr: false},
   ],
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: 'https://infographics.afterflood.in',
+    cacheTime: 1000 * 60 * 15,
+    gzip: true,
+    generate: true,
+    exclude: [
+      '/404',
+      '/list'
+    ],
+    routes () {
+      return routes_for_generate()
+    }
+  },
   /*
   ** Build configuration
   */
@@ -95,25 +134,10 @@ module.exports = {
     maxChunkSize: 300000
   },
   generate: {
-    routes: async function () {
-       let objects = await index.get_index()
-       let routes = []
-
-       objects.forEach((elem) => {
-         if (elem.languages !== undefined && Object.keys(elem.languages).length > 0) {
-           let languages = Object.keys(elem.languages)
-           languages.forEach((lang) => {
-             if (!routes.includes(lang)) {
-               routes.push('/' + lang)
-             }
-             let slug_url = '/' + lang + '/' + elem.slug
-             if (!routes.includes(slug_url)) {
-               routes.push(slug_url)
-             }
-           })
-         }
-       })
-       return routes
+    async routes () {
+      let routes = await routes_for_generate()
+      routes.push('404')
+      return routes
     }
   }
 }

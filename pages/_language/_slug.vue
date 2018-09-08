@@ -3,21 +3,19 @@
     <div class="animated fadeIn">
       <b-breadcrumb :items="breadcrumb_items"/>
       <b-row class="image-outer-container" v-if="document">
-  	    <b-col cols="12" md="8">
-          <no-ssr>
-            <div>
-              <div v-for="(png, index) in document.languages[$route.params.language].png"
-                   :key="index"
-                   v-if="document.languages !== undefined && document.languages[$route.params.language] !== undefined && document.languages[$route.params.language].png.length > 0">
-                   <progressive-img class="full-width-image"
-                                    :src="getimgurl(png)"
-                                    placeholder="/placeholder.png"/>
-              </div>
-            </div>
-          </no-ssr>
+  	    <b-col cols="12" md="8" v-if="hero_img">
+          <InfographicsCarousel :images="document.languages[$route.params.language].png"
+                                v-if="document.languages !== undefined && document.languages[$route.params.language] !== undefined && document.languages[$route.params.language].png.length > 0"/>
   	    </b-col>
+
         <b-col cols="12" md="4">
     			<h2 class="section-header">{{ document.title }}</h2>
+          <div class="section-tags">
+            <b-badge v-for="(tag, index) in document.tags" :key="index" variant="dark" :to="'/' + $route.params.language + '/?tag=' + tag">{{ tag }}</b-badge>
+          </div>
+          <p class="section-desc" v-if="description">
+            {{ description }}
+          </p>
           <a :href="document.languages[$route.params.language].pdf"
              target="_blank"
              v-if="document.languages[$route.params.language].pdf !== undefined">
@@ -50,17 +48,26 @@
 <script>
 import getGoogleImgUrl from '~/plugins/filters'
 import getGoogleID from '~/plugins/filters'
+import InfographicsCarousel from '~/components/InfographicsCarousel.vue'
+
 export default {
+  components: {
+    InfographicsCarousel
+  },
   head () {
+    let description = this.description !== null ? this.description : "After Flood Infographics on " + (this.document.title || "")
+    let title = this.document.title || ""
+    let lang = this.$route.params.language.replace(/\w\S*/g, (txt) => { return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();})
+    title = title + " (" + lang + ")"
     return {
-      title: this.document.title || "",
+      title: title,
       meta: [
-        { name: "image", content: this.document.languages[this.$route.params.language].png[0] },
-        { itemprop: "image", content: this.document.languages[this.$route.params.language].png[0] },
-        { property: "og:image", content: this.document.languages[this.$route.params.language].png[0] },
+        { name: "image", content: this.hero_img },
+        { itemprop: "image", content: this.hero_img },
+        { property: "og:image", content: this.hero_img },
         { property: "og:type", content: "website" },
-        { property: "og:title", content: this.document.title || "" },
-        { property: "og:description", content: "After Flood Infographics on " + (this.document.title || "") },
+        { property: "og:title", content: title },
+        { property: "og:description", content: description },
         { property: "og:image:width", content: "1200" },
         { property: "og:image:height", content: "630" },
       ]
@@ -69,9 +76,33 @@ export default {
   methods:{
     getimgurl (drive_url) {
       return this.$options.filters.getGoogleImgUrl(this.$options.filters.getGoogleID(drive_url))
+    },
+    onSlideStart (slide) {
+      this.sliding = true
+    },
+    onSlideEnd (slide) {
+      this.sliding = false
     }
   },
   computed: {
+    hero_img () {
+      try {
+        return this.document.languages[this.$route.params.language].png[0]
+      } catch(err) {
+        return null
+      }
+
+    },
+    description () {
+      let description = null
+      if (this.document.description !== undefined && this.document.description !== null) {
+        description = this.document.description
+      }
+      if (this.document.languages[this.$route.params.language].description !== undefined && this.document.languages[this.$route.params.language].description !== null) {
+        description = this.document.languages[this.$route.params.language].description
+      }
+      return description
+    },
     breadcrumb_items () {
       let items = [{
           text: 'Home',
@@ -123,7 +154,12 @@ export default {
 }
 .section-header{
 	font-size: 2em;
-	margin-bottom: 25px;
+}
+.section-tags {
+  margin-bottom: 25px;
+  .badge {
+    margin-right: 5px;
+  }
 }
 .section-desc{
 	font-size: 1.0em;
@@ -136,6 +172,7 @@ export default {
 	text-align:center;
 	color: #fff !important;
 	font-weight: 600;
+  margin: 0px !important;
 	text-decoration: none;
 	&:hover, &:visited, &:focus{
 		color: #fff !important;

@@ -16,8 +16,9 @@
           <nuxt-link :to="'/' + $route.params.language + '/' + doc['slug']" v-if="documents.length > 0" v-for="doc in documents" :key="doc.slug">
             <b-card :title="doc.title" v-if="doc.languages[$route.params.language].png && doc.languages[$route.params.language].png.length > 0" class="card-no-title">
               <div>
-                <!-- <progressive-img class="card-image-full" :src="getimgurl(doc.languages[$route.params.language].png[0])" placeholder="/placeholder.png"/> -->
-                <b-img :src="getimgurl(doc.languages[$route.params.language].png[0])" class="card-image-full w-100" />
+                <no-ssr>
+                  <InfographicsCarousel :images="doc.languages[$route.params.language].png" />
+                </no-ssr>
                 <no-ssr>
                   <div class="card-footer" @click.native="preventDefault">
                     <div class="row">
@@ -48,8 +49,12 @@
 <script>
 import getGoogleImgUrl from '~/plugins/filters'
 import getGoogleID from '~/plugins/filters'
+import InfographicsCarousel from '~/components/InfographicsCarousel.vue'
 
 export default {
+  components: {
+    InfographicsCarousel
+  },
   data () {
     return {
       search: ""
@@ -60,6 +65,11 @@ export default {
     lang = lang.replace(/\w\S*/g, (txt) => { return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();})
     return {
       'title': lang
+    }
+  },
+  mounted () {
+    if (this.$route.query.tag !== undefined && this.search === "") {
+      this.search = this.$route.query.tag
     }
   },
   methods:{
@@ -101,7 +111,18 @@ export default {
         let search_val = this.search.toLowerCase().replace(/\s+/g, '').trim()
         documents = documents.filter((elem) => {
           let search_slug = elem['slug'].replace(/\-/g, '')
-          return search_slug.includes(search_val)
+          let slug_search = search_slug.includes(search_val)
+          let tag_search = false
+          let desc_search = false
+
+          if (elem.tags != undefined) {
+            tag_search = elem.tags.includes(this.search)
+          }
+
+          if (elem.description != undefined) {
+            desc_search = elem.description.toLowerCase().includes(this.search)
+          }
+          return slug_search || tag_search || desc_search
         })
       }
       return documents
@@ -116,7 +137,7 @@ export default {
   .card-title {
     display: none !important;
   }
-  .card-body {
+  .card-body{
     padding: 0px;
   }
   .card-image-full {
@@ -140,7 +161,9 @@ export default {
   background: #fff;
   border-top: 1px solid #ddd;
   padding: 15px 12px;
-
+  &:last-child {
+    border-radius: 0 !important;
+  }
   .share-info{
     font-size: 0.9em;
     color: #999;

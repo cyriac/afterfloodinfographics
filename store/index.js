@@ -20,18 +20,27 @@ export const actions = {
   },
   async GET_INDEX ({ commit }) {
     let objects = await index.get_index()
-    let languages = []
+    let languages = {}
 
-    objects.forEach((obj) => {
+    objects.projects.forEach((obj) => {
       if (obj.languages !== undefined) {
         Object.keys(obj.languages).forEach((lang) => {
-          if (!languages.includes(lang)) {
-            languages.push(lang)
+          if (!Object.keys(languages).includes(lang)) {
+            languages[lang] = 1
+          } else {
+            languages[lang] += 1
           }
         })
       }
     })
 
-    commit('SET_INDEX', {'index': objects, 'languages': languages})
+    let sortable = [];
+    for (let lang in languages) {
+      sortable.push([lang, languages[lang]]);
+    }
+    sortable.sort((a, b) => {return b[1] - a[1]})
+    languages = []
+    sortable.forEach((elem) => {languages.push(elem[0])})
+    commit('SET_INDEX', {'index': objects.projects, 'languages': languages})
   }
 }
